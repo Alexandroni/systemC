@@ -5,4 +5,4 @@ This folder contains examples created in systemC.
 -- SystemC 2.3.2<br/>
 
 
-obs: I installed the newest systemc (2.3.2), however Vivado HLS runs systemC2.1
+Note: I installed the newest systemc (2.3.2), however Vivado HLS runs systemC2.1
