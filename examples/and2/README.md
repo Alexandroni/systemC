@@ -9,11 +9,8 @@ The following steps should be follow in order to Vivado HLS synthesise.<br/>
     ->and2.cpp<br/>
     <br/>
     -> Testbench: and2_test.cpp<br/>
-    -> tb_driver.cpp<br/>
-    -> tb_driver.h<br/>
-    -> tb_init.cpp<br/>
-    -> tb_init.h<br/>
-    -> result.golden.dat<br/>
+    -> monitor.cpp<br/>
+    -> stimuli.h<br/>
 
 ------------------------------------------------------------------------------------------------------
 In Vivado HLS
