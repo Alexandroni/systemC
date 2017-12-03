@@ -1,7 +1,7 @@
 /* Author: Joao Pedro Alexandroni
  * Brazil - 2017
  *
- * main Test bench
+ * main Test bench for vivado hls
  * 
  * */
 #ifdef __RTL_SIMULATION__
