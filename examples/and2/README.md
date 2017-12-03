@@ -40,4 +40,23 @@ NOTE: Vivado HLS only will be able to include yours header files (.h) if these f
 ------------------------------------------------------------------------------------------------------
 In Vivado Design<br/>
 
-9 - 
+9 - Create a Vivado RTL project on Basys 3<br/>
+
+10 - Add the source and testbench files which are inside the vivado_design folder<br/>
+
+11 - In file> OPen IP-XACT<br/>
+   ----> open the component.xml file which are inside the solution > impl > ip folder of yours vivado hls project folder<br/>
+
+12 - Add IP Package<br/>
+
+13 - Goes to IP Catalog > Vivado HLS IP > And2<br/>
+   ----> Add the And2 IP<br/>
+   *Note: Notice the name of the ip package and the VHDL file<br/>
+
+14 - Run Synthesis and Implementation<br/>
+
+15 - Run testbench <br/>
+
+16 - Generate Bitstream <br/>
+
+17 - Upload on board (basys3 in this case)
