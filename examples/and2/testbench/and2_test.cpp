@@ -1,6 +1,7 @@
-/* Xilinx Vivado HLS 2017.3
+/* Autthor: Joao Pedro Alexandroni
+ * Brazil - 2017
  *
- * This example is a modified testbench file from Xilinx Vivaod HLS systemc example.
+ * This example is a simple example for systenc testbench in Vivado HLS
  *
  * */
 #ifdef __RTL_SIMULATION__
@@ -9,8 +10,8 @@
 #else
 #include "and2.h"
 #endif
-#include "tb_init.h"
-#include "tb_driver.h"
+#include "monitor.h"
+#include "stimuli.h"
 
 int sc_main (int argc , char *argv[]) 
 {
@@ -21,46 +22,31 @@ int sc_main (int argc , char *argv[])
 	sc_report_handler::set_actions( SC_ID_OBJECT_EXISTS_, SC_LOG);
 
 	//Test ports
-	sc_signal<bool>	s_reset;
-	sc_signal<sc_uint<1> >	a;
-	sc_signal<sc_uint<1> >	b;
-	sc_signal<sc_uint<1> >	f;
-
-	sc_clock s_clk("s_clk",10,SC_NS);
-
-	tb_init	U_tb_init("U_tb_init");
-	and2	U_dut("U_dut");
-	tb_driver	U_tb_driver("U_tb_driver");
-	 
-	// Generate a clock and reset to drive the sim
-	U_tb_init.clk(s_clk);
-	U_tb_init.reset(s_reset);
-
-	// Connect the DUT
-	U_dut.A(a);
-	U_dut.B(b);
-	U_dut.F(f);
-
-	// Drive stimuli from dat* ports
-	// Capture results at out* ports
-	U_tb_driver.clk(s_clk);
-	U_tb_driver.reset(s_reset);
-	U_tb_driver.dat_a(a);
-	U_tb_driver.dat_b(b);
-	U_tb_driver.out_sum(f);
-   
-	// Sim for 200 
-	int end_time = 200;
-  
-	cout << "INFO: Simulating " << endl;
+	sc_signal <sc_uint<1> > sinalA, sinalB, sinalF;
+	sc_clock clock(" Clock", 10, SC_NS,0.5, 1, SC_NS);
 	
-	// start simulation 
-	sc_start(end_time, SC_NS);
-
-	if (U_tb_driver.retval != 0) {
-		printf("Test failed  !!!\n"); 
-	} else {
-		printf("Test passed !\n");
-  }
-  return U_tb_driver.retval;
+    //instanciate modules
+	Estimulos est("Stimuli");
+	and2 and2_port("And2");
+	Monitor mon("Monitor");
+	
+    //create stimuli
+	est.A(sinalA);
+	est.B(sinalB);
+	est.Clk(clock);
+	
+    //And2 port
+	and2_port.A(sinalA);
+	and2_port.B(sinalB);
+	mand2_port.F(sinalF);
+	
+    //monitor
+	mon.A(sinalA);
+	mon.B(sinalB);
+	mon.F(sinalF);
+	mon.Clk(clock);
+	
+	sc_start();
+	
+	return 0;
 };
