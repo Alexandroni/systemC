@@ -1,7 +1,5 @@
 This is a simple example using systemc to create an AND2 port. <br/>
 
-Note: The testbench files were modifed from Vivado HLS systemc Examples.<br/>
-
 The following steps should be follow in order to Vivado HLS synthesise.<br/>
 
 1 - Create a folder to contains the AND2 files<br/>

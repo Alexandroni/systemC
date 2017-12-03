@@ -2,7 +2,6 @@
  * Brazil - 2017
  *
  * This is a simple example of a AND2 port using systemc.
- * This example was created using the Vivado HLS xilinix examples as a model.
  *
  * This file contains the functions of the module created in the header file
  * 
