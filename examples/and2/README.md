@@ -41,6 +41,7 @@ NOTE: Vivado HLS only will be able to include yours header files (.h) if these f
 In Vivado Design<br/>
 
 9 - Create a Vivado RTL project on Basys 3<br/>
+  ---->Note* Make sure that the target language is VHDL
 
 10 - Add the source and testbench files which are inside the vivado_design folder<br/>
 
