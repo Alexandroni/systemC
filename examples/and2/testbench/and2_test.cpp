@@ -1,4 +1,4 @@
-/* Autthor: Joao Pedro Alexandroni
+/* Author: Joao Pedro Alexandroni
  * Brazil - 2017
  *
  * This example is a simple example for systenc testbench in Vivado HLS

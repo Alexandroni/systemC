@@ -1,4 +1,4 @@
-/* Autthor: Joao Pedro Alexandroni
+/* Author: Joao Pedro Alexandroni
  * Brazil - 2017
  *
  * This is a simple example of a AND2 port using systemc.

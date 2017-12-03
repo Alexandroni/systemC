@@ -1,4 +1,4 @@
-/* Autthor: Joao Pedro Alexandroni
+/* Author: Joao Pedro Alexandroni
  * Brazil - 2017
  *
  * This file monitors the stimulis created and used on the and2 port module.

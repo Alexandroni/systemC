@@ -1,4 +1,4 @@
-/* Autthor: Joao Pedro Alexandroni
+/* Author: Joao Pedro Alexandroni
  * Brazil - 2017
  *
  * This file generate stimulis to enter on and2 port module and shows its answers
