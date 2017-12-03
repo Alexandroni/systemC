@@ -5,12 +5,13 @@ The following steps should be follow in order to Vivado HLS synthesise.<br/>
 1 - Create a folder to contains the AND2 files<br/>
 
 2 - copy all files to it<br/>
-    -> sources : and2.h
-    ->and2.cpp<br/>
-    <br/>
-    -> Testbench: and2_test.cpp<br/>
-    -> monitor.cpp<br/>
-    -> stimuli.h<br/>
+    -> sources : <br/>
+      -->and2.h<br/>
+      -->and2.cpp<br/>
+    -> Testbench: <br/>
+      -->and2_test.cpp<br/>
+      --> monitor.cpp<br/>
+      --> stimuli.h<br/>
 
 ------------------------------------------------------------------------------------------------------
 In Vivado HLS
@@ -26,11 +27,11 @@ In Vivado HLS
 
 7 - Once the vivado HLS opens the project you will be able to synthesise and run the test bench<br/>
 
-NOTE: Vivado HLS only will be able to include yours header files (.h) if these files are on the folder that you've created the project before you create a Vivado HLS project.
+NOTE: Vivado HLS only will be able to include yours header files (.h) if these files are on the folder that you've created the project before you create a Vivado HLS project.<br/>
 
-8 - Once the synthesis and simulation process are finished you can export the IP package to Vivado Design.
+8 - Once the synthesis and simulation process are finished you can export the IP package to Vivado Design.<br/>
 
 ------------------------------------------------------------------------------------------------------
-In Vivado Design
+In Vivado Design<br/>
 
 9 - 
