@@ -35,7 +35,7 @@ In Vivado HLS
 
 NOTE: Vivado HLS only will be able to include yours header files (.h) if these files are on the folder that you've created the project before you create a Vivado HLS project.<br/>
 
-8 - Once the synthesis and simulation process are finished you can export the IP package to Vivado Design.<br/>
+8 - Once the synthesis and simulation process are finished you can export RTL as an IP package to Vivado Design.<br/>
 
 ------------------------------------------------------------------------------------------------------
 In Vivado Design<br/>
