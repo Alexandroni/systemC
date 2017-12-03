@@ -55,7 +55,7 @@ In Vivado Design<br/>
 
 14 - Run Synthesis and Implementation<br/>
 
-15 - Run testbench <br/>
+15 - Run testbench - Behavioral simulation<br/>
 
 16 - Generate Bitstream <br/>
 
