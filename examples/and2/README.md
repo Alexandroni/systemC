@@ -6,12 +6,12 @@ The following steps should be follow in order to Vivado HLS synthesise.<br/>
 
 2 - copy all files to it<br/>
     -> sources : <br/>
-      -->and2.h<br/>
-      -->and2.cpp<br/>
+      ---->and2.h<br/>
+      ---->and2.cpp<br/>
     -> Testbench: <br/>
-      -->and2_test.cpp<br/>
-      --> monitor.cpp<br/>
-      --> stimuli.h<br/>
+      ---->and2_test.cpp<br/>
+      ----> monitor.cpp<br/>
+      ----> stimuli.h<br/>
 
 ------------------------------------------------------------------------------------------------------
 In Vivado HLS
