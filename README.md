@@ -1,1 +1,1 @@
-alexandroni
+This reposity contains systemC examples created on CentOS 7 and synthetized using Vivado HLS 2017.3
