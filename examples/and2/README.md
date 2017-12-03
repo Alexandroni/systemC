@@ -15,6 +15,9 @@ The following steps should be follow in order to Vivado HLS synthesise.<br/>
     -> tb_init.h<br/>
     -> result.golden.dat<br/>
 
+------------------------------------------------------------------------------------------------------
+In Vivado HLS
+
 3 - Enter Vivado HLS and create a project inside the folder that you already have copied the files on step 2.<br/>
 
 4 - In top function put:<br/>
@@ -27,3 +30,10 @@ The following steps should be follow in order to Vivado HLS synthesise.<br/>
 7 - Once the vivado HLS opens the project you will be able to synthesise and run the test bench<br/>
 
 NOTE: Vivado HLS only will be able to include yours header files (.h) if these files are on the folder that you've created the project before you create a Vivado HLS project.
+
+8 - Once the synthesis and simulation process are finished you can export the IP package to Vivado Design.
+
+------------------------------------------------------------------------------------------------------
+In Vivado Design
+
+9 - 
