@@ -1,0 +1,1 @@
+This folder contains the sources and testbench codes in VHDL to test the ip core sinthesised on Vivado HLS.
