@@ -1,32 +1,32 @@
 Commands to install systemc on Linux--
 --------------------------------------
 
-1 - Donwload the newest SystemC on Accellera website
-  -> http://www.accellera.org/downloads/standards/systemc
+1 - Donwload the newest SystemC on Accellera website <br/>
+  -> http://www.accellera.org/downloads/standards/systemc<br/>
 
-2 - Unzip the package
-  -> Terminal Command: tar -xvf systemc-2.3.2.tar.gz
+2 - Unzip the package<br/>
+  -> Terminal Command: tar -xvf systemc-2.3.2.tar.gz<br/>
 
-3 - Go to the systemc-2.3.2/ folder
-  -> Terminal Command: cd systemc-2.3.2/
+3 - Go to the systemc-2.3.2/ folder<br/>
+  -> Terminal Command: cd systemc-2.3.2/<br/>
 
-4 - Create a directory called "objdir"
-  -> Terminal Command: mkdir objdir
+4 - Create a directory called "objdir"<br/>
+  -> Terminal Command: mkdir objdir<br/>
 
-5 - Create a directory for systemc on usr folder
-  -> Terminal Command: sudo mkdir /usr/local/systemc-2.3.2
+5 - Create a directory for systemc on usr folder<br/>
+  -> Terminal Command: sudo mkdir /usr/local/systemc-2.3.2<br/>
 
-6 - Run the configure command from objdir folder
-  -> Terminal Command: sudo ../configure --prefix=/usr/local/systemc-2.3.2/
+6 - Run the configure command from objdir folder<br/>
+  -> Terminal Command: sudo ../configure --prefix=/usr/local/systemc-2.3.2/<br/>
 
-7 - Run the make command
-  -> Terminal Command: sudo make
+7 - Run the make command<br/>
+  -> Terminal Command: sudo make<br/>
 
-8 - Run the make install command
-  -> Terminal Command: sudo make install
+8 - Run the make install command<br/>
+  -> Terminal Command: sudo make install<br/>
 
-9 - Export the variable SYSTEMC_HOME
-  -> Terminal Command: export SYSTEMC_HOME=/usr/local/systemc-2.3.2/
+9 - Export the variable SYSTEMC_HOME<br/>
+  -> Terminal Command: export SYSTEMC_HOME=/usr/local/systemc-2.3.2/<br/>
 
-10 - Create a systemC project and a make file and run the command make from its folder to run the project
-  -> make
+10 - Create a systemC project and a make file and run the command make from its folder to run the project<br/>
+  -> make<br/>
