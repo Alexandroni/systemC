@@ -8,29 +8,24 @@
 
 SC_MODULE(Estimulos)
 {
-	sc_out <bool> start;
-	sc_out <sc_uint<2> > step;
+	sc_out <bool> start, reset;
 	sc_in <bool> Clk;
 	
 	void GeraEstimulos()
 	{
-		wait();		
-		start.write(false);
-		step.write(1);
-		wait();
-		
+		reset.write(true);
+		wait(1);
+		reset.write(false);
+		wait(1);
 		start.write(true);
-		wait(20);
-		
-		start.write(false);
-		wait(5);
+		wait(100);
 
+		reset.write(true);
+		wait(1);
+		reset.write(false);
+		wait(1);
 		start.write(true);
-		step.write(2);
-		wait(10);
-
-		step.write(3);
-		wait(10);
+		wait(100);
 
 		sc_stop();
 	}

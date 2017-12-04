@@ -9,12 +9,13 @@
  *       Also it follows differents steps, which can be defined.
  * 
  * */
+#ifndef SC_COUNTER_H
+#define SC_COUNTER_H
 #include "systemc.h"
 
 SC_MODULE (simple_counter) {
   
-  sc_in  <bool> start, clk;
-  sc_in  <sc_uint<2> > step;
+  sc_in  <bool> start, clk, reset;
   sc_out <sc_uint<10> > count_out;
   //variable auxiliar
   sc_uint<10>  aux;
@@ -22,8 +23,9 @@ SC_MODULE (simple_counter) {
   void counting();
 
   SC_CTOR(simple_counter) {
-    SC_METHOD (counting);
-      sensitive << clk.pos();
+      SC_CTHREAD (counting, clk.pos());
+      reset_signal_is(reset,true);
   }
 
 };
+#endif

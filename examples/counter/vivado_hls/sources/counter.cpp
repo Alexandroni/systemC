@@ -13,15 +13,16 @@
   
 void simple_counter::counting(){
 
-    if (start.read()){
-        //if start = true so start counting 
-		if (step.read() > 0){
-			aux = aux + step.read();
-				count_out.write(aux);
+	aux = 0;
+	count_out.write(aux);
+	wait();
+
+	while(true){
+		if(start.read()){
+			aux = aux + 1;
+			count_out.write(aux);
 		}
-        
-    }else{
-        aux = 0;
-        count_out.write(0);
-    }
+		wait();
+	}
+
   }//end counting
