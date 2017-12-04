@@ -9,4 +9,4 @@ Note: It follows the same tutorial of the AND2 port.<br/>
 
 This example shows how to implement a clock module usign SC_CTHREAD from SystemC. <br/>
 
-The module designed is a simple counter and the implementation was made in verilog.
+The module designed is a simple counter and the implementation was made in VERILOG.
