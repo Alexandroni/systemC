@@ -48,7 +48,7 @@ module top_tb();
         #10
         start = 1'b1;
         #10
-        #100
+        #200
         $stop;
     end
 
