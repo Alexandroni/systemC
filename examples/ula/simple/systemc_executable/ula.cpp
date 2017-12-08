@@ -1,22 +1,22 @@
 #include "ula.h"
 
-
 void ula_new::opUla(){
 
-	sc_uint<16> aux;
+	bool aux, cAux = false;
 
 	switch (op.read()){
         case 1:
 			//Add
-			aux = A.read() + B.read();
+			aux = A.read() ^ B.read();
+			cAux = A.read() && B.read();
 			break;
 		case 2:
-			//Sub
-			aux = A.read() - B.read();
+			//AND
+			aux = A.read() && B.read();
 			break;
 		case 3:
-			//Multply
-			aux = A.read() * B.read();
+			//OR
+			aux = A.read() || B.read();
 			break;
 		default:
 			aux = 0;
@@ -26,5 +26,6 @@ void ula_new::opUla(){
 	
 	//ouput
 	C.write(aux);
+	carryOut.write(cAux);
 
 }//end opUla

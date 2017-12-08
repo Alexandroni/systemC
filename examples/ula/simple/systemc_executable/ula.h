@@ -5,16 +5,17 @@
 
 SC_MODULE(ula_new)
 {
-	sc_in <sc_uint<16> > A, B;
+	sc_in <bool> A, B;
+	sc_in <bool> carryIn;
 	sc_in <sc_uint<2> > op;
-	sc_out <sc_uint<16> > C;
+	sc_out <bool> C, carryOut;
 	
 	void opUla();
 	
 	SC_CTOR(ula_new)
 	{
 		SC_METHOD(opUla);
-		sensitive << A << B << op;
+		sensitive << A << B << carryIn << op;
 	}
 };
 
