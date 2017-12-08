@@ -27,7 +27,7 @@ int sc_main (int argc , char *argv[])
 	sc_clock clock(" Clock", 10, SC_NS,0.5, 1, SC_NS);
 	
 	Estimulos est("Estimulos");
-	simple_counter m("counter");
+	divider m("counter");
 	Monitor mon("Monitor");
 	
 	est.start(sigStart);

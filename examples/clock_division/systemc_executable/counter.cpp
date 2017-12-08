@@ -11,7 +11,7 @@
  * */
 #include "counter.h"
   
-void simple_counter::counting(){
+void divider::counting(){
 
 	aux = 0;
 	saida = false;

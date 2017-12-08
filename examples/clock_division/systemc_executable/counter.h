@@ -13,7 +13,7 @@
 #define SC_COUNTER_H
 #include "systemc.h"
 
-SC_MODULE (simple_counter) {
+SC_MODULE (divider) {
   
   sc_in  <bool> start, clk, reset;
   sc_in <sc_uint<10> > final;
@@ -25,7 +25,7 @@ SC_MODULE (simple_counter) {
 
   void counting();
 
-  SC_CTOR(simple_counter) {
+  SC_CTOR(divider) {
       SC_CTHREAD (counting, clk.pos());
       reset_signal_is(reset,true);
   }
