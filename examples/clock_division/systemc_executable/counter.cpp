@@ -23,7 +23,7 @@ void simple_counter::counting(){
 	while(true){
 		if(start.read()){
 			aux = aux + 1;
-			if(aux == final.read()){
+			if(aux >= final.read()){
 				aux = 0;
 				if (saida == true){
 					saida = false;
