@@ -4,6 +4,7 @@
 void ula_new::opUla(){
 
 	sc_uint<16> aux;
+	int a,b; 
 
 	switch (op.read()){
         case 1:
@@ -19,8 +20,17 @@ void ula_new::opUla(){
 			aux = A.read() * B.read();
 			break;
 		case 4:
-			//Logic AND
-			aux = A.read() & B.read();
+			//A Bigger then B
+			if (A.read() > B.read()){
+				aux = 1;
+			}else{
+				aux = 0;
+			}
+			break;
+		case 5:
+			a = A.read();
+			b = B.read();
+			aux = a & b;
 			break;
 		default:
 			aux = 0;

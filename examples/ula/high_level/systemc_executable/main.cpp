@@ -6,7 +6,7 @@
 int sc_main(int argc, char* argv[])
 {
 	sc_signal <sc_uint<16> > sinalA, sinalB, sinalC;
-	sc_signal <sc_uint<2> > opSig;
+	sc_signal <sc_uint<3> > opSig;
 	sc_clock clock(" Clock", 10, SC_NS,0.5, 1, SC_NS);
 	
 	Estimulos est("Estimulos");

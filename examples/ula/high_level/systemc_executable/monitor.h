@@ -7,7 +7,7 @@ using namespace std;
 SC_MODULE(Monitor)
 {
 	sc_in <sc_uint<16> > A, B, C;
-	sc_in <sc_uint<2> > op;
+	sc_in <sc_uint<3> > op;
 	sc_in <bool> Clk;
 	
 	void monitor()

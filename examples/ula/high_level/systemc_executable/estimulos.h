@@ -3,7 +3,7 @@
 SC_MODULE(Estimulos)
 {
 	sc_out <sc_uint<16> > A, B;
-	sc_out <sc_uint<2> > op;
+	sc_out <sc_uint<3> > op;
 	sc_in <bool> Clk;
 	
 	void GeraEstimulos()
@@ -23,9 +23,9 @@ SC_MODULE(Estimulos)
 		op.write(3);
 		wait();
 
-		A.write(8);
-		B.write(5);
-		op.write(0);
+		A.write(1);
+		B.write(4);
+		op.write(5);
 		wait();
 		
 		sc_stop();
