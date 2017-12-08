@@ -16,12 +16,9 @@
 SC_MODULE (simple_counter) {
   
   sc_in  <bool> start, clk, reset;
-  sc_in <sc_uint<10> > final;
-  sc_out <bool> count_out;
+  sc_out <sc_uint<10> > count_out;
   //variable auxiliar
-  sc_uint <32>  aux;
-  bool saida;
-
+  sc_uint<10>  aux;
 
   void counting();
 

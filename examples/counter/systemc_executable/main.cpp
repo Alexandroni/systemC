@@ -16,10 +16,10 @@
 int sc_main (int argc , char *argv[]) 
 {
     //this is necessary to be able to run simulation and cosimulation
-	sc_report_handler::set_actions("/IEEE_Std_1666/deprecated", SC_DO_NOTHING);
-	sc_report_handler::set_actions( SC_ID_LOGIC_X_TO_BOOL_, SC_LOG);
-	sc_report_handler::set_actions( SC_ID_VECTOR_CONTAINS_LOGIC_VALUE_, SC_LOG);
-	sc_report_handler::set_actions( SC_ID_OBJECT_EXISTS_, SC_LOG);
+	//sc_report_handler::set_actions("/IEEE_Std_1666/deprecated", SC_DO_NOTHING);
+	//sc_report_handler::set_actions( SC_ID_LOGIC_X_TO_BOOL_, SC_LOG);
+	//sc_report_handler::set_actions( SC_ID_VECTOR_CONTAINS_LOGIC_VALUE_, SC_LOG);
+	//sc_report_handler::set_actions( SC_ID_OBJECT_EXISTS_, SC_LOG);
 
 	sc_signal <bool> sigStart, sigReset;
         sc_signal <sc_uint<10> > sigOut;

@@ -16,20 +16,27 @@ void simple_counter::counting(){
 	aux = 0;
 	saida = false;
 	
+	
 	count_out.write(false);
 	wait();
 
 	while(true){
 		if(start.read()){
 			aux = aux + 1;
+			if(aux == final.read()){
+				aux = 0;
+				if (saida == true){
+					saida = false;
+				}else{
+					saida = true;
+				}
+				count_out.write(saida);
+			}
+
 		}
 		wait();
 
-		if(aux == final.read()){
-			aux = 0;
-			saida = ~saida;
-			count_out.write(saida);
-		}
+		
 	}
 
   }//end counting
