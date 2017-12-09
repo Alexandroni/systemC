@@ -1,0 +1,22 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2017.3/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'alexandroni' on host 'Alexandroni' (Linux_x86_64 version 3.10.0-693.5.2.el7.x86_64) on Fri Dec 08 21:51:57 -02 2017
+INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
+INFO: [HLS 200-10] In directory '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test'
+INFO: [HLS 200-10] Opening project '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test/ula_simples_final'.
+INFO: [HLS 200-10] Opening solution '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test/ula_simples_final/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7a200tfbg676-2'
+INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 21:52:30 2017...
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.
+WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.

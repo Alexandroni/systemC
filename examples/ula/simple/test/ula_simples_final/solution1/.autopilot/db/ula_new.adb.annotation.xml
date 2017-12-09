@@ -1,0 +1,4 @@
+<annotationInfo>
+<item  id="39" filename="ula.cpp" linenumber="10" name="aux" contextFuncName="opUla" moduleName="ula_new::opUla" rtlName="aux_fu_150_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="8" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test"></item>
+<item  id="18" filename="./ula.h" linenumber="16" name="" contextFuncName="ula_new" moduleName="ula_new" rtlName="StgValue_11_ula_new_opUla_fu_50" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test"></item>
+</annotationInfo>

@@ -1,0 +1,8 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../main_test.cpp in debug mode
+../../../../main_test.cpp:96:29: fatal error: sc_combo_method.h: No such file or directory
+compilation terminated.
+make: *** [obj/main_test.o] Error 1
+CRITICAL WARNING: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ula.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test/ula.cpp"/>
+    <originFiles name="ula.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test/ula.h"/>
+  </source>
+  <testbench>
+    <originFiles name="estimulos.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test/estimulos.h"/>
+    <originFiles name="main.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test/main.cpp"/>
+    <originFiles name="monitor.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/simple/test/monitor.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

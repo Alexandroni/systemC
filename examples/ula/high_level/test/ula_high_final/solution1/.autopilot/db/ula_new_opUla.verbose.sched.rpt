@@ -1,0 +1,150 @@
+
+
+================================================================
+== Vivado HLS Report for 'ula_new_opUla'
+================================================================
+* Date:           Fri Dec  8 22:15:55 2017
+
+* Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
+* Project:        ula_high_final
+* Solution:       solution1
+* Product family: artix7
+* Target device:  xc7a200tfbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.11|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+ <State 1> : 8.11ns
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %A), !map !85"
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %B), !map !89"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i3* %op), !map !93"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %C), !map !97"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str, i32 0, [13 x i8]* @p_str1, [2 x i8]* @p_str2, i32 0, i32 0, i16* %A) nounwind" [ula.cpp:5]
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str, i32 0, [13 x i8]* @p_str1, [2 x i8]* @p_str3, i32 0, i32 0, i16* %B) nounwind" [ula.cpp:6]
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str, i32 0, [13 x i8]* @p_str4, [3 x i8]* @p_str5, i32 0, i32 0, i3* %op) nounwind" [ula.cpp:7]
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort([8 x i8]* @p_str, i32 1, [13 x i8]* @p_str1, [2 x i8]* @p_str6, i32 0, i32 0, i16* %C) nounwind" [ula.cpp:8]
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProcessDef([8 x i8]* @p_str, i32 0, [6 x i8]* @p_str7) nounwind" [ula.cpp:9]
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([10 x i8]* @p_str8)" [ula.cpp:9]
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecProtocol(i32 1) nounwind" [ula.cpp:9]
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%val_V = call i3 @_ssdm_op_Read.ap_auto.volatile.i3P(i3* %op)" [ula.cpp:9]
+ST_1 : Operation 14 [1/1] (1.75ns)   --->   "switch i3 %val_V, label %._crit_edge [
+    i3 1, label %1
+    i3 2, label %2
+    i3 3, label %3
+    i3 -4, label %4
+    i3 -3, label %5
+  ]" [ula.cpp:9]
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%val_V_9 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %A)" [ula.cpp:31]
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%val_V_10 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %B)" [ula.cpp:32]
+ST_1 : Operation 17 [1/1] (1.00ns)   --->   "%aux_V_3 = and i16 %val_V_10, %val_V_9" [ula.cpp:33]   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (1.75ns)   --->   "br label %._crit_edge" [ula.cpp:34]
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%val_V_7 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %A)" [ula.cpp:24]
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%val_V_8 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %B)" [ula.cpp:24]
+ST_1 : Operation 21 [1/1] (1.97ns)   --->   "%tmp_2 = icmp sgt i16 %val_V_7, %val_V_8" [ula.cpp:24]   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_s = zext i1 %tmp_2 to i16" [ula.cpp:24]
+ST_1 : Operation 23 [1/1] (1.75ns)   --->   "br label %._crit_edge" [ula.cpp:29]
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%val_V_5 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %A)" [ula.cpp:20]
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%val_V_6 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %B)" [ula.cpp:20]
+ST_1 : Operation 26 [1/1] (6.35ns)   --->   "%aux_V_2 = mul i16 %val_V_6, %val_V_5" [ula.cpp:20]   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.35> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_1 : Operation 27 [1/1] (1.75ns)   --->   "br label %._crit_edge" [ula.cpp:21]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%val_V_3 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %A)" [ula.cpp:16]
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%val_V_4 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %B)" [ula.cpp:16]
+ST_1 : Operation 30 [1/1] (1.84ns)   --->   "%aux_V_1 = sub i16 %val_V_3, %val_V_4" [ula.cpp:16]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 31 [1/1] (1.75ns)   --->   "br label %._crit_edge" [ula.cpp:17]
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%val_V_1 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %A)" [ula.cpp:12]
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%val_V_2 = call i16 @_ssdm_op_Read.ap_auto.volatile.i16P(i16* %B)" [ula.cpp:12]
+ST_1 : Operation 34 [1/1] (1.84ns)   --->   "%aux_V = add i16 %val_V_2, %val_V_1" [ula.cpp:12]   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (1.75ns)   --->   "br label %._crit_edge" [ula.cpp:13]
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%v_V = phi i16 [ %aux_V_3, %5 ], [ %p_s, %4 ], [ %aux_V_2, %3 ], [ %aux_V_1, %2 ], [ %aux_V, %1 ], [ 0, %0 ]"
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.volatile.i16P(i16* %C, i16 %v_V)" [ula.cpp:42]
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([10 x i8]* @p_str8, i32 %tmp)" [ula.cpp:42]
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [ula.cpp:42]
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 8.11ns
+The critical path consists of the following:
+	wire read on port 'A' (ula.cpp:20) [30]  (0 ns)
+	'mul' operation ('aux.V', ula.cpp:20) [32]  (6.35 ns)
+	multiplexor before 'phi' operation ('aux.V') with incoming values : ('aux.V', ula.cpp:33) ('p_s', ula.cpp:24) ('aux.V', ula.cpp:20) ('aux.V', ula.cpp:16) ('aux.V', ula.cpp:12) [45]  (1.76 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

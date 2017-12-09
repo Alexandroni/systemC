@@ -1,0 +1,802 @@
+	.file	"counter.cpp"
+	.section	.text.startup,"ax",@progbits
+	.align	16, 0x90
+	.type	__cxx_global_var_init,@function
+__cxx_global_var_init:                  # @__cxx_global_var_init
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp2:
+	.cfi_def_cfa_offset 16
+.Ltmp3:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp4:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	leaq	_ZStL8__ioinit, %rdi
+	callq	_ZNSt8ios_base4InitC1Ev
+	leaq	_ZNSt8ios_base4InitD1Ev, %rdi
+	leaq	_ZStL8__ioinit, %rax
+	leaq	__dso_handle, %rdx
+	movq	%rax, %rsi
+	callq	__cxa_atexit
+	movl	%eax, -4(%rbp)          # 4-byte Spill
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp5:
+	.size	__cxx_global_var_init, .Ltmp5-__cxx_global_var_init
+	.cfi_endproc
+
+	.section	.text._ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi,"axG",@progbits,_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi,comdat
+	.weak	_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi
+	.align	16, 0x90
+	.type	_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi,@function
+_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi: # @_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi
+	.cfi_startproc
+# BB#0:
+	movq	%rdi, -8(%rsp)
+	movq	%rsi, -16(%rsp)
+	movl	%edx, -20(%rsp)
+	ret
+.Ltmp6:
+	.size	_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi, .Ltmp6-_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi
+	.cfi_endproc
+
+	.section	.text.startup,"ax",@progbits
+	.align	16, 0x90
+	.type	__cxx_global_var_init1,@function
+__cxx_global_var_init1:                 # @__cxx_global_var_init1
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp9:
+	.cfi_def_cfa_offset 16
+.Ltmp10:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp11:
+	.cfi_def_cfa_register %rbp
+	leaq	_ZN7sc_coreL17api_version_checkE, %rdi
+	callq	_ZN7sc_core20sc_api_version_2_3_0C1Ev
+	popq	%rbp
+	ret
+.Ltmp12:
+	.size	__cxx_global_var_init1, .Ltmp12-__cxx_global_var_init1
+	.cfi_endproc
+
+	.text
+	.globl	_ZN14simple_counter8countingEv
+	.align	16, 0x90
+	.type	_ZN14simple_counter8countingEv,@function
+_ZN14simple_counter8countingEv:         # @_ZN14simple_counter8countingEv
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp15:
+	.cfi_def_cfa_offset 16
+.Ltmp16:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp17:
+	.cfi_def_cfa_register %rbp
+	subq	$64, %rsp
+	movl	$0, %esi
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	movq	%rdi, %rax
+	addq	$1000, %rax             # imm = 0x3E8
+	movq	%rdi, -24(%rbp)         # 8-byte Spill
+	movq	%rax, %rdi
+	callq	_ZN5sc_dt7sc_uintILi32EEaSEi
+	leaq	-9(%rbp), %rsi
+	movq	-24(%rbp), %rdi         # 8-byte Reload
+	movb	$0, 1024(%rdi)
+	addq	$832, %rdi              # imm = 0x340
+	movb	$0, -9(%rbp)
+	movq	%rax, -32(%rbp)         # 8-byte Spill
+	callq	_ZN7sc_core8sc_inoutIbE5writeERKb
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	movq	%rax, %rdi
+	callq	_ZN7sc_core9sc_module4waitEv
+.LBB3_1:                                # =>This Inner Loop Header: Depth=1
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	addq	$208, %rax
+	movq	%rax, %rdi
+	callq	_ZNK7sc_core5sc_inIbE4readEv
+	testb	$1, (%rax)
+	jne	.LBB3_2
+	jmp	.LBB3_8
+.LBB3_2:                                #   in Loop: Header=BB3_1 Depth=1
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	addq	$1000, %rax             # imm = 0x3E8
+	movq	-24(%rbp), %rcx         # 8-byte Reload
+	addq	$1000, %rcx             # imm = 0x3E8
+	movq	%rcx, %rdi
+	movq	%rax, -40(%rbp)         # 8-byte Spill
+	callq	_ZNK5sc_dt12sc_uint_basecvyEv
+	addq	$1, %rax
+	movq	-40(%rbp), %rdi         # 8-byte Reload
+	movq	%rax, %rsi
+	callq	_ZN5sc_dt7sc_uintILi32EEaSEy
+	movq	-24(%rbp), %rcx         # 8-byte Reload
+	addq	$1000, %rcx             # imm = 0x3E8
+	movq	-24(%rbp), %rsi         # 8-byte Reload
+	addq	$688, %rsi              # imm = 0x2B0
+	movq	%rsi, %rdi
+	movq	%rax, -48(%rbp)         # 8-byte Spill
+	movq	%rcx, -56(%rbp)         # 8-byte Spill
+	callq	_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv
+	movq	-56(%rbp), %rdi         # 8-byte Reload
+	movq	%rax, %rsi
+	callq	_ZN5sc_dteqERKNS_12sc_uint_baseES2_
+	testb	$1, %al
+	jne	.LBB3_3
+	jmp	.LBB3_7
+.LBB3_3:                                #   in Loop: Header=BB3_1 Depth=1
+	movl	$0, %esi
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	addq	$1000, %rax             # imm = 0x3E8
+	movq	%rax, %rdi
+	callq	_ZN5sc_dt7sc_uintILi32EEaSEi
+	movq	-24(%rbp), %rdi         # 8-byte Reload
+	movb	1024(%rdi), %cl
+	andb	$1, %cl
+	movzbl	%cl, %esi
+	cmpl	$1, %esi
+	movq	%rax, -64(%rbp)         # 8-byte Spill
+	jne	.LBB3_5
+# BB#4:                                 #   in Loop: Header=BB3_1 Depth=1
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	movb	$0, 1024(%rax)
+	jmp	.LBB3_6
+.LBB3_5:                                #   in Loop: Header=BB3_1 Depth=1
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	movb	$1, 1024(%rax)
+.LBB3_6:                                #   in Loop: Header=BB3_1 Depth=1
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	addq	$832, %rax              # imm = 0x340
+	movq	-24(%rbp), %rcx         # 8-byte Reload
+	addq	$1024, %rcx             # imm = 0x400
+	movq	%rax, %rdi
+	movq	%rcx, %rsi
+	callq	_ZN7sc_core8sc_inoutIbE5writeERKb
+.LBB3_7:                                #   in Loop: Header=BB3_1 Depth=1
+	jmp	.LBB3_8
+.LBB3_8:                                #   in Loop: Header=BB3_1 Depth=1
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	movq	%rax, %rdi
+	callq	_ZN7sc_core9sc_module4waitEv
+	jmp	.LBB3_1
+.Ltmp18:
+	.size	_ZN14simple_counter8countingEv, .Ltmp18-_ZN14simple_counter8countingEv
+	.cfi_endproc
+
+	.section	.text._ZN5sc_dt7sc_uintILi32EEaSEi,"axG",@progbits,_ZN5sc_dt7sc_uintILi32EEaSEi,comdat
+	.weak	_ZN5sc_dt7sc_uintILi32EEaSEi
+	.align	16, 0x90
+	.type	_ZN5sc_dt7sc_uintILi32EEaSEi,@function
+_ZN5sc_dt7sc_uintILi32EEaSEi:           # @_ZN5sc_dt7sc_uintILi32EEaSEi
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp21:
+	.cfi_def_cfa_offset 16
+.Ltmp22:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp23:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movl	%esi, -12(%rbp)
+	movq	-8(%rbp), %rdi
+	movq	%rdi, %rax
+	movl	-12(%rbp), %esi
+	movq	%rdi, -24(%rbp)         # 8-byte Spill
+	movq	%rax, %rdi
+	callq	_ZN5sc_dt12sc_uint_baseaSEi
+	movq	-24(%rbp), %rdi         # 8-byte Reload
+	movq	%rax, -32(%rbp)         # 8-byte Spill
+	movq	%rdi, %rax
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+.Ltmp24:
+	.size	_ZN5sc_dt7sc_uintILi32EEaSEi, .Ltmp24-_ZN5sc_dt7sc_uintILi32EEaSEi
+	.cfi_endproc
+
+	.section	.text._ZN7sc_core8sc_inoutIbE5writeERKb,"axG",@progbits,_ZN7sc_core8sc_inoutIbE5writeERKb,comdat
+	.weak	_ZN7sc_core8sc_inoutIbE5writeERKb
+	.align	16, 0x90
+	.type	_ZN7sc_core8sc_inoutIbE5writeERKb,@function
+_ZN7sc_core8sc_inoutIbE5writeERKb:      # @_ZN7sc_core8sc_inoutIbE5writeERKb
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp27:
+	.cfi_def_cfa_offset 16
+.Ltmp28:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp29:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	%rsi, -16(%rbp)
+	movq	-8(%rbp), %rsi
+	movq	%rsi, %rdi
+	callq	_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv
+	movq	%rax, %rsi
+	addq	$8, %rsi
+	movq	8(%rax), %rax
+	movq	32(%rax), %rax
+	movq	-16(%rbp), %rdi
+	movq	%rdi, -24(%rbp)         # 8-byte Spill
+	movq	%rsi, %rdi
+	movq	-24(%rbp), %rsi         # 8-byte Reload
+	callq	*%rax
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+.Ltmp30:
+	.size	_ZN7sc_core8sc_inoutIbE5writeERKb, .Ltmp30-_ZN7sc_core8sc_inoutIbE5writeERKb
+	.cfi_endproc
+
+	.section	.text._ZN7sc_core9sc_module4waitEv,"axG",@progbits,_ZN7sc_core9sc_module4waitEv,comdat
+	.weak	_ZN7sc_core9sc_module4waitEv
+	.align	16, 0x90
+	.type	_ZN7sc_core9sc_module4waitEv,@function
+_ZN7sc_core9sc_module4waitEv:           # @_ZN7sc_core9sc_module4waitEv
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp33:
+	.cfi_def_cfa_offset 16
+.Ltmp34:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp35:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_ZNK7sc_core9sc_object10simcontextEv
+	movq	%rax, %rdi
+	callq	_ZN7sc_core4waitEPNS_13sc_simcontextE
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp36:
+	.size	_ZN7sc_core9sc_module4waitEv, .Ltmp36-_ZN7sc_core9sc_module4waitEv
+	.cfi_endproc
+
+	.section	.text._ZNK7sc_core5sc_inIbE4readEv,"axG",@progbits,_ZNK7sc_core5sc_inIbE4readEv,comdat
+	.weak	_ZNK7sc_core5sc_inIbE4readEv
+	.align	16, 0x90
+	.type	_ZNK7sc_core5sc_inIbE4readEv,@function
+_ZNK7sc_core5sc_inIbE4readEv:           # @_ZNK7sc_core5sc_inIbE4readEv
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp39:
+	.cfi_def_cfa_offset 16
+.Ltmp40:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp41:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv
+	movq	(%rax), %rdi
+	movq	%rdi, -16(%rbp)         # 8-byte Spill
+	movq	%rax, %rdi
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	callq	*56(%rax)
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp42:
+	.size	_ZNK7sc_core5sc_inIbE4readEv, .Ltmp42-_ZNK7sc_core5sc_inIbE4readEv
+	.cfi_endproc
+
+	.section	.text._ZN5sc_dt7sc_uintILi32EEaSEy,"axG",@progbits,_ZN5sc_dt7sc_uintILi32EEaSEy,comdat
+	.weak	_ZN5sc_dt7sc_uintILi32EEaSEy
+	.align	16, 0x90
+	.type	_ZN5sc_dt7sc_uintILi32EEaSEy,@function
+_ZN5sc_dt7sc_uintILi32EEaSEy:           # @_ZN5sc_dt7sc_uintILi32EEaSEy
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp45:
+	.cfi_def_cfa_offset 16
+.Ltmp46:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp47:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	%rsi, -16(%rbp)
+	movq	-8(%rbp), %rsi
+	movq	%rsi, %rdi
+	movq	-16(%rbp), %rax
+	movq	%rsi, -24(%rbp)         # 8-byte Spill
+	movq	%rax, %rsi
+	callq	_ZN5sc_dt12sc_uint_baseaSEy
+	movq	-24(%rbp), %rsi         # 8-byte Reload
+	movq	%rax, -32(%rbp)         # 8-byte Spill
+	movq	%rsi, %rax
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+.Ltmp48:
+	.size	_ZN5sc_dt7sc_uintILi32EEaSEy, .Ltmp48-_ZN5sc_dt7sc_uintILi32EEaSEy
+	.cfi_endproc
+
+	.section	.text._ZNK5sc_dt12sc_uint_basecvyEv,"axG",@progbits,_ZNK5sc_dt12sc_uint_basecvyEv,comdat
+	.weak	_ZNK5sc_dt12sc_uint_basecvyEv
+	.align	16, 0x90
+	.type	_ZNK5sc_dt12sc_uint_basecvyEv,@function
+_ZNK5sc_dt12sc_uint_basecvyEv:          # @_ZNK5sc_dt12sc_uint_basecvyEv
+	.cfi_startproc
+# BB#0:
+	movq	%rdi, -8(%rsp)
+	movq	-8(%rsp), %rdi
+	movq	8(%rdi), %rax
+	ret
+.Ltmp49:
+	.size	_ZNK5sc_dt12sc_uint_basecvyEv, .Ltmp49-_ZNK5sc_dt12sc_uint_basecvyEv
+	.cfi_endproc
+
+	.section	.text._ZN5sc_dteqERKNS_12sc_uint_baseES2_,"axG",@progbits,_ZN5sc_dteqERKNS_12sc_uint_baseES2_,comdat
+	.weak	_ZN5sc_dteqERKNS_12sc_uint_baseES2_
+	.align	16, 0x90
+	.type	_ZN5sc_dteqERKNS_12sc_uint_baseES2_,@function
+_ZN5sc_dteqERKNS_12sc_uint_baseES2_:    # @_ZN5sc_dteqERKNS_12sc_uint_baseES2_
+	.cfi_startproc
+# BB#0:
+	movq	%rdi, -8(%rsp)
+	movq	%rsi, -16(%rsp)
+	movq	-8(%rsp), %rsi
+	movq	8(%rsi), %rsi
+	movq	-16(%rsp), %rdi
+	cmpq	8(%rdi), %rsi
+	sete	%al
+	andb	$1, %al
+	movzbl	%al, %eax
+	ret
+.Ltmp50:
+	.size	_ZN5sc_dteqERKNS_12sc_uint_baseES2_, .Ltmp50-_ZN5sc_dteqERKNS_12sc_uint_baseES2_
+	.cfi_endproc
+
+	.section	.text._ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv,"axG",@progbits,_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv,comdat
+	.weak	_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv
+	.align	16, 0x90
+	.type	_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv,@function
+_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv: # @_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp53:
+	.cfi_def_cfa_offset 16
+.Ltmp54:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp55:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv
+	movq	(%rax), %rdi
+	movq	%rdi, -16(%rbp)         # 8-byte Spill
+	movq	%rax, %rdi
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	callq	*40(%rax)
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp56:
+	.size	_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv, .Ltmp56-_ZNK7sc_core5sc_inIN5sc_dt7sc_uintILi10EEEE4readEv
+	.cfi_endproc
+
+	.section	.text._ZN7sc_core18sc_process_monitorD1Ev,"axG",@progbits,_ZN7sc_core18sc_process_monitorD1Ev,comdat
+	.weak	_ZN7sc_core18sc_process_monitorD1Ev
+	.align	16, 0x90
+	.type	_ZN7sc_core18sc_process_monitorD1Ev,@function
+_ZN7sc_core18sc_process_monitorD1Ev:    # @_ZN7sc_core18sc_process_monitorD1Ev
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp59:
+	.cfi_def_cfa_offset 16
+.Ltmp60:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp61:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	callq	_ZN7sc_core18sc_process_monitorD2Ev
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp62:
+	.size	_ZN7sc_core18sc_process_monitorD1Ev, .Ltmp62-_ZN7sc_core18sc_process_monitorD1Ev
+	.cfi_endproc
+
+	.section	.text._ZN7sc_core18sc_process_monitorD0Ev,"axG",@progbits,_ZN7sc_core18sc_process_monitorD0Ev,comdat
+	.weak	_ZN7sc_core18sc_process_monitorD0Ev
+	.align	16, 0x90
+	.type	_ZN7sc_core18sc_process_monitorD0Ev,@function
+_ZN7sc_core18sc_process_monitorD0Ev:    # @_ZN7sc_core18sc_process_monitorD0Ev
+	.cfi_startproc
+	.cfi_personality 3, __gxx_personality_v0
+.Leh_func_begin13:
+	.cfi_lsda 3, .Lexception13
+# BB#0:
+	pushq	%rbp
+.Ltmp68:
+	.cfi_def_cfa_offset 16
+.Ltmp69:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp70:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	%rdi, %rax
+.Ltmp63:
+	movq	%rax, -32(%rbp)         # 8-byte Spill
+	callq	_ZN7sc_core18sc_process_monitorD1Ev
+.Ltmp64:
+	jmp	.LBB13_1
+.LBB13_1:
+	movq	-32(%rbp), %rax         # 8-byte Reload
+	movq	%rax, %rdi
+	callq	_ZdlPv
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+.LBB13_2:
+.Ltmp65:
+	movl	%edx, %ecx
+	movq	%rax, -16(%rbp)
+	movl	%ecx, -20(%rbp)
+	movq	-32(%rbp), %rax         # 8-byte Reload
+	movq	%rax, %rdi
+	callq	_ZdlPv
+# BB#3:
+	movq	-16(%rbp), %rdi
+	callq	_Unwind_Resume
+.Ltmp71:
+	.size	_ZN7sc_core18sc_process_monitorD0Ev, .Ltmp71-_ZN7sc_core18sc_process_monitorD0Ev
+	.cfi_endproc
+.Leh_func_end13:
+	.section	.gcc_except_table,"a",@progbits
+	.align	4
+GCC_except_table13:
+.Lexception13:
+	.byte	255                     # @LPStart Encoding = omit
+	.byte	3                       # @TType Encoding = udata4
+	.asciz	 "\234"                 # @TType base offset
+	.byte	3                       # Call site Encoding = udata4
+	.byte	26                      # Call site table length
+.Lset0 = .Ltmp63-.Leh_func_begin13      # >> Call Site 1 <<
+	.long	.Lset0
+.Lset1 = .Ltmp64-.Ltmp63                #   Call between .Ltmp63 and .Ltmp64
+	.long	.Lset1
+.Lset2 = .Ltmp65-.Leh_func_begin13      #     jumps to .Ltmp65
+	.long	.Lset2
+	.byte	0                       #   On action: cleanup
+.Lset3 = .Ltmp64-.Leh_func_begin13      # >> Call Site 2 <<
+	.long	.Lset3
+.Lset4 = .Leh_func_end13-.Ltmp64        #   Call between .Ltmp64 and .Leh_func_end13
+	.long	.Lset4
+	.long	0                       #     has no landing pad
+	.byte	0                       #   On action: cleanup
+	.align	4
+
+	.section	.text._ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv,"axG",@progbits,_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv,comdat
+	.weak	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv
+	.align	16, 0x90
+	.type	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv,@function
+_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv: # @_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp74:
+	.cfi_def_cfa_offset 16
+.Ltmp75:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp76:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	cmpq	$0, 96(%rdi)
+	movq	%rdi, -16(%rbp)         # 8-byte Spill
+	jne	.LBB14_2
+# BB#1:
+	leaq	_ZN7sc_core13SC_ID_GET_IF_E, %rsi
+	leaq	.L.str, %rdx
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	movq	%rax, %rdi
+	callq	_ZNK7sc_core12sc_port_base12report_errorEPKcS2_
+.LBB14_2:
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	movq	96(%rax), %rax
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp77:
+	.size	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv, .Ltmp77-_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIN5sc_dt7sc_uintILi10EEEEEEptEv
+	.cfi_endproc
+
+	.section	.text._ZN5sc_dt12sc_uint_baseaSEy,"axG",@progbits,_ZN5sc_dt12sc_uint_baseaSEy,comdat
+	.weak	_ZN5sc_dt12sc_uint_baseaSEy
+	.align	16, 0x90
+	.type	_ZN5sc_dt12sc_uint_baseaSEy,@function
+_ZN5sc_dt12sc_uint_baseaSEy:            # @_ZN5sc_dt12sc_uint_baseaSEy
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp80:
+	.cfi_def_cfa_offset 16
+.Ltmp81:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp82:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	%rsi, -16(%rbp)
+	movq	-8(%rbp), %rsi
+	movq	-16(%rbp), %rdi
+	movq	%rdi, 8(%rsi)
+	movq	%rsi, %rdi
+	movq	%rsi, -24(%rbp)         # 8-byte Spill
+	callq	_ZN5sc_dt12sc_uint_base11extend_signEv
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+.Ltmp83:
+	.size	_ZN5sc_dt12sc_uint_baseaSEy, .Ltmp83-_ZN5sc_dt12sc_uint_baseaSEy
+	.cfi_endproc
+
+	.section	.text._ZN5sc_dt12sc_uint_base11extend_signEv,"axG",@progbits,_ZN5sc_dt12sc_uint_base11extend_signEv,comdat
+	.weak	_ZN5sc_dt12sc_uint_base11extend_signEv
+	.align	16, 0x90
+	.type	_ZN5sc_dt12sc_uint_base11extend_signEv,@function
+_ZN5sc_dt12sc_uint_base11extend_signEv: # @_ZN5sc_dt12sc_uint_base11extend_signEv
+	.cfi_startproc
+# BB#0:
+	movq	%rdi, -8(%rsp)
+	movq	-8(%rsp), %rdi
+	movq	_ZN5sc_dt9UINT_ZEROE, %rax
+	xorq	$-1, %rax
+	movl	20(%rdi), %ecx
+                                        # kill: CL<def> RCX<kill>
+	shrq	%cl, %rax
+	movq	8(%rdi), %rdx
+	andq	%rax, %rdx
+	movq	%rdx, 8(%rdi)
+	ret
+.Ltmp84:
+	.size	_ZN5sc_dt12sc_uint_base11extend_signEv, .Ltmp84-_ZN5sc_dt12sc_uint_base11extend_signEv
+	.cfi_endproc
+
+	.section	.text._ZN5sc_dt12sc_uint_baseaSEi,"axG",@progbits,_ZN5sc_dt12sc_uint_baseaSEi,comdat
+	.weak	_ZN5sc_dt12sc_uint_baseaSEi
+	.align	16, 0x90
+	.type	_ZN5sc_dt12sc_uint_baseaSEi,@function
+_ZN5sc_dt12sc_uint_baseaSEi:            # @_ZN5sc_dt12sc_uint_baseaSEi
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp87:
+	.cfi_def_cfa_offset 16
+.Ltmp88:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp89:
+	.cfi_def_cfa_register %rbp
+	subq	$32, %rsp
+	movq	%rdi, -8(%rbp)
+	movl	%esi, -12(%rbp)
+	movq	-8(%rbp), %rdi
+	movslq	-12(%rbp), %rax
+	movq	%rax, 8(%rdi)
+	movq	%rdi, -24(%rbp)         # 8-byte Spill
+	callq	_ZN5sc_dt12sc_uint_base11extend_signEv
+	movq	-24(%rbp), %rax         # 8-byte Reload
+	addq	$32, %rsp
+	popq	%rbp
+	ret
+.Ltmp90:
+	.size	_ZN5sc_dt12sc_uint_baseaSEi, .Ltmp90-_ZN5sc_dt12sc_uint_baseaSEi
+	.cfi_endproc
+
+	.section	.text._ZN7sc_core18sc_process_monitorD2Ev,"axG",@progbits,_ZN7sc_core18sc_process_monitorD2Ev,comdat
+	.weak	_ZN7sc_core18sc_process_monitorD2Ev
+	.align	16, 0x90
+	.type	_ZN7sc_core18sc_process_monitorD2Ev,@function
+_ZN7sc_core18sc_process_monitorD2Ev:    # @_ZN7sc_core18sc_process_monitorD2Ev
+	.cfi_startproc
+# BB#0:
+	movq	%rdi, -8(%rsp)
+	ret
+.Ltmp91:
+	.size	_ZN7sc_core18sc_process_monitorD2Ev, .Ltmp91-_ZN7sc_core18sc_process_monitorD2Ev
+	.cfi_endproc
+
+	.section	.text._ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv,"axG",@progbits,_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv,comdat
+	.weak	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv
+	.align	16, 0x90
+	.type	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv,@function
+_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv: # @_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp94:
+	.cfi_def_cfa_offset 16
+.Ltmp95:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp96:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	cmpq	$0, 96(%rdi)
+	movq	%rdi, -16(%rbp)         # 8-byte Spill
+	jne	.LBB19_2
+# BB#1:
+	leaq	_ZN7sc_core13SC_ID_GET_IF_E, %rsi
+	leaq	.L.str, %rdx
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	movq	%rax, %rdi
+	callq	_ZNK7sc_core12sc_port_base12report_errorEPKcS2_
+.LBB19_2:
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	movq	96(%rax), %rax
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp97:
+	.size	_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv, .Ltmp97-_ZNK7sc_core9sc_port_bINS_15sc_signal_in_ifIbEEEptEv
+	.cfi_endproc
+
+	.section	.text._ZNK7sc_core9sc_object10simcontextEv,"axG",@progbits,_ZNK7sc_core9sc_object10simcontextEv,comdat
+	.weak	_ZNK7sc_core9sc_object10simcontextEv
+	.align	16, 0x90
+	.type	_ZNK7sc_core9sc_object10simcontextEv,@function
+_ZNK7sc_core9sc_object10simcontextEv:   # @_ZNK7sc_core9sc_object10simcontextEv
+	.cfi_startproc
+# BB#0:
+	movq	%rdi, -8(%rsp)
+	movq	-8(%rsp), %rdi
+	movq	80(%rdi), %rax
+	ret
+.Ltmp98:
+	.size	_ZNK7sc_core9sc_object10simcontextEv, .Ltmp98-_ZNK7sc_core9sc_object10simcontextEv
+	.cfi_endproc
+
+	.section	.text._ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv,"axG",@progbits,_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv,comdat
+	.weak	_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv
+	.align	16, 0x90
+	.type	_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv,@function
+_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv: # @_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp101:
+	.cfi_def_cfa_offset 16
+.Ltmp102:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp103:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	movq	%rdi, -8(%rbp)
+	movq	-8(%rbp), %rdi
+	cmpq	$0, 96(%rdi)
+	movq	%rdi, -16(%rbp)         # 8-byte Spill
+	jne	.LBB21_2
+# BB#1:
+	leaq	_ZN7sc_core13SC_ID_GET_IF_E, %rsi
+	leaq	.L.str, %rdx
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	movq	%rax, %rdi
+	callq	_ZNK7sc_core12sc_port_base12report_errorEPKcS2_
+.LBB21_2:
+	movq	-16(%rbp), %rax         # 8-byte Reload
+	movq	96(%rax), %rax
+	addq	$16, %rsp
+	popq	%rbp
+	ret
+.Ltmp104:
+	.size	_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv, .Ltmp104-_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIbEEEptEv
+	.cfi_endproc
+
+	.section	.text.startup,"ax",@progbits
+	.align	16, 0x90
+	.type	_GLOBAL__I_a,@function
+_GLOBAL__I_a:                           # @_GLOBAL__I_a
+	.cfi_startproc
+# BB#0:
+	pushq	%rbp
+.Ltmp107:
+	.cfi_def_cfa_offset 16
+.Ltmp108:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+.Ltmp109:
+	.cfi_def_cfa_register %rbp
+	callq	__cxx_global_var_init
+	callq	__cxx_global_var_init1
+	popq	%rbp
+	ret
+.Ltmp110:
+	.size	_GLOBAL__I_a, .Ltmp110-_GLOBAL__I_a
+	.cfi_endproc
+
+	.type	_ZStL8__ioinit,@object  # @_ZStL8__ioinit
+	.local	_ZStL8__ioinit
+	.comm	_ZStL8__ioinit,1,1
+	.type	_ZN7sc_coreL26PHASH_DEFAULT_REORDER_FLAGE,@object # @_ZN7sc_coreL26PHASH_DEFAULT_REORDER_FLAGE
+	.section	.rodata,"a",@progbits
+_ZN7sc_coreL26PHASH_DEFAULT_REORDER_FLAGE:
+	.byte	1                       # 0x1
+	.size	_ZN7sc_coreL26PHASH_DEFAULT_REORDER_FLAGE, 1
+
+	.type	_ZN7sc_coreL17api_version_checkE,@object # @_ZN7sc_coreL17api_version_checkE
+	.local	_ZN7sc_coreL17api_version_checkE
+	.comm	_ZN7sc_coreL17api_version_checkE,1,1
+	.type	_ZTVN7sc_core18sc_process_monitorE,@object # @_ZTVN7sc_core18sc_process_monitorE
+	.section	.rodata._ZTVN7sc_core18sc_process_monitorE,"aG",@progbits,_ZTVN7sc_core18sc_process_monitorE,comdat
+	.weak	_ZTVN7sc_core18sc_process_monitorE
+	.align	16
+_ZTVN7sc_core18sc_process_monitorE:
+	.quad	0
+	.quad	_ZTIN7sc_core18sc_process_monitorE
+	.quad	_ZN7sc_core18sc_process_monitorD1Ev
+	.quad	_ZN7sc_core18sc_process_monitorD0Ev
+	.quad	_ZN7sc_core18sc_process_monitor6signalEPNS_17sc_thread_processEi
+	.size	_ZTVN7sc_core18sc_process_monitorE, 40
+
+	.type	_ZTSN7sc_core18sc_process_monitorE,@object # @_ZTSN7sc_core18sc_process_monitorE
+	.section	.rodata._ZTSN7sc_core18sc_process_monitorE,"aG",@progbits,_ZTSN7sc_core18sc_process_monitorE,comdat
+	.weak	_ZTSN7sc_core18sc_process_monitorE
+	.align	16
+_ZTSN7sc_core18sc_process_monitorE:
+	.asciz	 "N7sc_core18sc_process_monitorE"
+	.size	_ZTSN7sc_core18sc_process_monitorE, 31
+
+	.type	_ZTIN7sc_core18sc_process_monitorE,@object # @_ZTIN7sc_core18sc_process_monitorE
+	.section	.rodata._ZTIN7sc_core18sc_process_monitorE,"aG",@progbits,_ZTIN7sc_core18sc_process_monitorE,comdat
+	.weak	_ZTIN7sc_core18sc_process_monitorE
+	.align	8
+_ZTIN7sc_core18sc_process_monitorE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSN7sc_core18sc_process_monitorE
+	.size	_ZTIN7sc_core18sc_process_monitorE, 16
+
+	.type	.L.str,@object          # @.str
+	.section	.rodata.str1.1,"aMS",@progbits,1
+.L.str:
+	.asciz	 "port is not bound"
+	.size	.L.str, 18
+
+	.section	.ctors,"aw",@progbits
+	.align	8
+	.quad	_GLOBAL__I_a
+
+	.section	".note.GNU-stack","",@progbits

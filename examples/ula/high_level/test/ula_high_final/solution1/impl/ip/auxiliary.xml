@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="ula_new" xd:componentRef="ula_new" xd:initiationInterval="1" xd:clockPeriod="10.000000" xd:sequential="false" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="A" xd:originalName="A" xd:direction="in" xd:interfaceRef="A" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="B" xd:originalName="B" xd:direction="in" xd:interfaceRef="B" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="op" xd:originalName="op" xd:direction="in" xd:interfaceRef="op" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="3"/>
+  <xd:arg xd:name="C" xd:originalName="C" xd:direction="out" xd:interfaceRef="C" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16" xd:firstOut="0"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="120" xd:FF="0" xd:BRAM="0" xd:DSP="1"/>
+</xd:acceleratorMap>

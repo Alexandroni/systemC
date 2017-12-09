@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="simple_counter" xd:componentRef="simple_counter" xd:initiationInterval="6" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="start" xd:originalName="start" xd:direction="in" xd:interfaceRef="start" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="final" xd:originalName="final" xd:direction="in" xd:interfaceRef="final" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="10"/>
+  <xd:arg xd:name="count_out" xd:originalName="count_out" xd:direction="out" xd:interfaceRef="count_out" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="5" xd:average-case="3"/>
+  <xd:resourceEstimates xd:LUT="125" xd:FF="40" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

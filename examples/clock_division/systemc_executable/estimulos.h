@@ -19,10 +19,10 @@ SC_MODULE(Estimulos)
 		reset.write(false);
 		wait(1);
 		start.write(true);
-		final.write(25);
-		wait(100);
+		final.write(2);
+		wait(25);
 		final.write(5);
-		wait(100);
+		wait(25);
 		sc_stop();
 	}
 	

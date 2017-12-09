@@ -20,22 +20,30 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module top_ula(  
-  A,
-  B,
-  op,
-  C);
-  
-  input  wire [15 : 0] A;
-  input  wire [15 : 0] B;
-  input  wire [1 : 0] op;
-  output wire [15 : 0] C;
-  
-  ula_new_0 inst (
-      .A(A),
-      .B(B),
-      .op(op),
-      .C(C)
-    );
-  
+module top_ula(
+    A,
+    B,
+    carryIn,
+    op,
+    C,
+    carryOut);
+    
+    
+    input wire [0 : 0] A;
+    input wire [0 : 0] B;
+    input wire [0 : 0] carryIn;
+    input wire [1 : 0] op;
+    output wire [0 : 0] C;
+    output wire [0 : 0] carryOut;
+    
+      ula_new_0 inst (
+        .A(A),
+        .B(B),
+        .carryIn(carryIn),
+        .op(op),
+        .C(C),
+        .carryOut(carryOut)
+      );
+    
 endmodule
+

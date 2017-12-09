@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;ula.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:01:29 ; elapsed = 00:01:06 . Memory (MB): peak = 453.000 ; gain = 17.504 ; free physical = 527 ; free virtual = 9869" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Linking Time (s): cpu = 00:01:31 ; elapsed = 00:01:09 . Memory (MB): peak = 453.000 ; gain = 17.504 ; free physical = 523 ; free virtual = 9870" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:01:33 ; elapsed = 00:01:12 . Memory (MB): peak = 453.223 ; gain = 17.727 ; free physical = 509 ; free virtual = 9863" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:01:33 ; elapsed = 00:01:12 . Memory (MB): peak = 453.223 ; gain = 17.727 ; free physical = 504 ; free virtual = 9860" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:01:34 ; elapsed = 00:01:13 . Memory (MB): peak = 580.996 ; gain = 145.500 ; free physical = 479 ; free virtual = 9839" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:01:34 ; elapsed = 00:01:14 . Memory (MB): peak = 580.996 ; gain = 145.500 ; free physical = 478 ; free virtual = 9836" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;ula_new&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="312" content="Process &apos;ula_new::opUla&apos; has no reset block." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="306" content="Module &apos;ula_new&apos; has no clock port, it is a combinational module." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ ula_new ]" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;ula_new_opUla&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;ula_new_opUla&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;ula_new_opUla&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-35]" severity="warn" keynum="91" content="Protocol &apos;SC_METHOD&apos; contains conflicting I/O accesses:
+   wire read on port &apos;A&apos; (ula.cpp:10) and wire read on port &apos;A&apos; (ula.cpp:11) occur in the same clock cycle." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 74.31 seconds; current allocated memory: 81.349 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.28 seconds; current allocated memory: 81.533 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;ula_new_opUla&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;ula_new_opUla&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.4 seconds; current allocated memory: 81.702 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;ula_new&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;ula_new&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.56 seconds; current allocated memory: 82.245 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.11 seconds; current allocated memory: 82.327 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;ula_new&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;ula_new/A&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;ula_new/B&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;ula_new/carryIn&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;ula_new/op&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;ula_new/C&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;ula_new/carryOut&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="251" content="Port &apos;ula_new/carryIn&apos; has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;ula_new&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.37 seconds; current allocated memory: 82.403 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:01:35 ; elapsed = 00:01:17 . Memory (MB): peak = 580.996 ; gain = 145.500 ; free physical = 451 ; free virtual = 9821" tag=""/>
+	<Message prefix="[SYSC 207-301]" severity="info" keynum="SYSC_301_1065" content="Generating SystemC RTL for ula_new." tag=""/>
+	<Message prefix="[VHDL 208-304]" severity="info" keynum="VHDL_304_1066" content="Generating VHDL RTL for ula_new." tag=""/>
+	<Message prefix="[VLOG 209-307]" severity="info" keynum="VLOG_307_1067" content="Generating Verilog RTL for ula_new." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="info" keynum="472" content="Total elapsed time: 76.73 seconds; peak allocated memory: 82.403 MB." tag=""/>
+</Messages>

@@ -22,15 +22,17 @@
 
 module top_tb();
 
-     reg clk;
-     reg reset;
-     reg [0 : 0] start;
-     wire [9 : 0] count_out;
+   reg clk;
+   reg reset;
+   reg [0 : 0] start;
+   reg [9 : 0] final;
+   wire [0 : 0] count_out;
 
-    top dut(.clk (clk),
-            .reset (reset),
-            .start (start),
-            .count_out (count_out));
+    top dut(.clk(clk),
+      .reset(reset),
+      .start(start),
+      .final(final),
+      .count_out(count_out));
     
     initial begin
         clk = 1'b0;
@@ -47,8 +49,8 @@ module top_tb();
         reset = 1'b0;
         #10
         start = 1'b1;
-        #10
-        #200
+        final = 10'b10;
+        #600
         $stop;
     end
 

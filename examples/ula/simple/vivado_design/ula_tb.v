@@ -19,41 +19,47 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+module tb_ula();
 
-module ula_tb();
-
-    reg [15 : 0] A;
-    reg [15 : 0] B;
-    reg [1 : 0]  op;
-    wire [15 : 0] C;
+    reg [0 : 0] A;
+    reg [0 : 0] B;
+    reg [0 : 0] carryIn;
+    reg [1 : 0] op;
+    wire [0 : 0] C;
+    wire [0 : 0] carryOut;
     
-    top_ula dut (
+      top_ula dut (
         .A(A),
         .B(B),
+        .carryIn(carryIn),
         .op(op),
-        .C(C)
+        .C(C),
+        .carryOut(carryOut)
       );
-
-    initial begin
-        A = 16'b1;
-        B = 16'b1001;
-        op = 2'b1;
-        #10
-        
-        A = 16'b1001;
-        B = 16'b1000;
-        op = 2'b10;
-        #10
-                
-        A = 16'b10;
-        B = 16'b1001;
-        op = 2'b11;
-        #10
-        
-        A = 16'b10;
-        B = 16'b1001;
-        op = 2'b0;
-        #10
-        $stop;
-    end
+      
+      initial begin
+              A = 1'b0;
+              B = 1'b0;
+              op = 2'b0;
+              carryIn = 1'b1;
+              #10
+              
+              A = 1'b0;
+              B = 1'b1;
+              op = 2'b1;
+              carryIn = 1'b0;
+              #10
+                            
+              A = 1'b1;
+              B = 1'b0;
+              op = 2'b10;
+              #10
+              
+              A = 1'b1;
+              B = 1'b1;
+              op = 2'b11;
+              #10
+  
+              $stop;
+          end
 endmodule

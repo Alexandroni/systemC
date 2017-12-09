@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[IMPL 213-8]" severity="info" keynum="IMPL_8_1776" content="Exporting RTL as an IP in IP-XACT." tag=""/>
+	<Message prefix="[IMPL 213-201]" severity="warn" keynum="IMPL_201_1757" content="IO timing constraints are not applied without adding IO buffers." tag=""/>
+	<Message prefix="[IMPL 213-201]" severity="warn" keynum="IMPL_201_1757" content="IO timing constraints are not applied without adding IO buffers." tag=""/>
+</Messages>

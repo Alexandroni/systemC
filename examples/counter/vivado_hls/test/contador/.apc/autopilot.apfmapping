@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="counter.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/counter.cpp"/>
+    <originFiles name="counter.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/counter.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Makefile" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/Makefile"/>
+    <originFiles name="estimulos.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/estimulos.h"/>
+    <originFiles name="main.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/main.cpp"/>
+    <originFiles name="monitor.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/monitor.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

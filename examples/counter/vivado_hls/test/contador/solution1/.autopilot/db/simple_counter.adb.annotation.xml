@@ -1,0 +1,4 @@
+<annotationInfo>
+<item  id="32" filename="counter.cpp" linenumber="22" name="v_V" contextFuncName="counting" moduleName="simple_counter::counting" rtlName="v_V_fu_98_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="17" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test"></item>
+<item  id="25" filename="./counter.h" linenumber="25" name="" contextFuncName="simple_counter" moduleName="simple_counter" rtlName="grp_simple_counter_counting_fu_48" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test"></item>
+</annotationInfo>

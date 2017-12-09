@@ -22,21 +22,23 @@
 
 module top(
     clk,
-    reset,
-    start,
-    count_out
+  reset,
+  start,
+  final,
+  count_out);
+  
+  input wire clk;
+  input wire reset;
+  input wire [0 : 0] start;
+  input wire [9 : 0] final;
+  output wire [0 : 0] count_out;
+  
+  division inst(
+      .clk(clk),
+      .reset(reset),
+      .start(start),
+      .final(final),
+      .count_out(count_out)
     );
-    
-    input wire clk;
-    input wire reset;
-    input wire [0 : 0] start;
-    output wire [9 : 0] count_out;
-    
-    simple_counter_0 inst(
-        .clk(clk),
-        .reset(reset),
-        .start(start),
-        .count_out(count_out)
-      );
-    
+
 endmodule

@@ -1,0 +1,25 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../main.cpp in debug mode
+   Compiling ../../../../ula.cpp in debug mode
+   Generating csim.exe
+
+             SystemC 2.3.0-ASI --- May 15 2013 06:32:03
+        Copyright (c) 1996-2012 by all Contributors,
+        ALL RIGHTS RESERVED
+
+
+Warning: (W506) illegal characters:  Clock substituted by _Clock
+In file: ../../../../src/sysc/kernel/sc_object.cpp:264
+Construindo Monitor
+     Tempo    A    B  Cin  out Cout   op
+       0 s    0    0    0    0    0    0
+      1 ns    0    0    0    0    0    1
+     11 ns    0    1    1    1    0    1
+     21 ns    0    1    1    0    0    2
+     31 ns    1    0    1    1    0    3
+     41 ns    1    1    1    0    0    0
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
