@@ -1,0 +1,12 @@
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:05 . Memory (MB): peak = 1280.863 ; gain = 2.016 ; free physical = 170 ; free virtual = 9604
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 19:52:29 2017...

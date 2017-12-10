@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;selector.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:01:48 ; elapsed = 00:01:24 . Memory (MB): peak = 453.004 ; gain = 17.504 ; free physical = 761 ; free virtual = 9829" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Linking Time (s): cpu = 00:01:50 ; elapsed = 00:01:27 . Memory (MB): peak = 453.004 ; gain = 17.504 ; free physical = 758 ; free virtual = 9830" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:01:52 ; elapsed = 00:01:29 . Memory (MB): peak = 453.234 ; gain = 17.734 ; free physical = 756 ; free virtual = 9837" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:01:52 ; elapsed = 00:01:29 . Memory (MB): peak = 453.234 ; gain = 17.734 ; free physical = 751 ; free virtual = 9835" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:01:52 ; elapsed = 00:01:30 . Memory (MB): peak = 581.000 ; gain = 145.500 ; free physical = 726 ; free virtual = 9812" tag=""/>
+	<Message prefix="[XFORM 203-561]" severity="warn" keynum="788" content="&apos;Loop-1&apos; (selector.cpp:10:6) in function &apos;selector::select&apos; is an infinite loop." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:01:53 ; elapsed = 00:01:32 . Memory (MB): peak = 581.000 ; gain = 145.500 ; free physical = 721 ; free virtual = 9807" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;selector&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="299" content="Found the clock port of process &apos;selector::select&apos;: &apos;clk&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="308" content="Found the reset port of process &apos;selector::select&apos;: &apos;reset&apos;." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ selector ]" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;selector_select&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;selector_select&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;selector_select&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 93.44 seconds; current allocated memory: 82.056 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.35 seconds; current allocated memory: 82.226 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;selector_select&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;selector_select&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.35 seconds; current allocated memory: 82.471 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;selector&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;selector&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.37 seconds; current allocated memory: 83.093 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.18 seconds; current allocated memory: 83.164 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;selector&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;selector/clk&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;selector/reset&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;selector/start&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;selector/selected&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;selector&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.29 seconds; current allocated memory: 83.239 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:01:54 ; elapsed = 00:01:36 . Memory (MB): peak = 581.000 ; gain = 145.500 ; free physical = 701 ; free virtual = 9796" tag=""/>
+	<Message prefix="[SYSC 207-301]" severity="info" keynum="SYSC_301_1065" content="Generating SystemC RTL for selector." tag=""/>
+	<Message prefix="[VHDL 208-304]" severity="info" keynum="VHDL_304_1066" content="Generating VHDL RTL for selector." tag=""/>
+	<Message prefix="[VLOG 209-307]" severity="info" keynum="VLOG_307_1067" content="Generating Verilog RTL for selector." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="info" keynum="472" content="Total elapsed time: 95.52 seconds; peak allocated memory: 83.239 MB." tag=""/>
+</Messages>

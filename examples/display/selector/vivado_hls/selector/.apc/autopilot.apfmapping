@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="selector.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls/selector.cpp"/>
+    <originFiles name="selector.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls/selector.h"/>
+  </source>
+  <testbench>
+    <originFiles name="estimulos.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls/estimulos.h"/>
+    <originFiles name="main.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls/main.cpp"/>
+    <originFiles name="monitor.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls/monitor.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

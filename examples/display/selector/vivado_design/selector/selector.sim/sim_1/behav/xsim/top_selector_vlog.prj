@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../selector.ip_user_files/ipstatic/hdl/verilog/selector.v" \
+"../../../../selector.ip_user_files/ipstatic/hdl/verilog/selector_select.v" \
+"../../../../selector.srcs/sources_1/ip/selector_0/sim/selector_0.v" \
+"../../../../selector.srcs/sources_1/new/top_selector.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,65 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
+| Date         : Sun Dec 10 20:42:59 2017
+| Host         : Alexandroni running 64-bit CentOS Linux release 7.4.1708 (Core)
+| Command      : report_control_sets -verbose -file top_selector_control_sets_placed.rpt
+| Design       : top_selector
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     3 |
+| Unused register locations in slices containing registers |     7 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              36 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |                          Enable Signal                          |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | inst/inst/grp_selector_select_fu_48/E[0]                        | reset_IBUF                                                     |                1 |              4 |
+|  clk_IBUF_BUFG |                                                                 |                                                                |                2 |              5 |
+|  clk_IBUF_BUFG | inst/inst/grp_selector_select_fu_48/selector_counter_loa_fu_780 | inst/inst/grp_selector_select_fu_48/selector_counter_loa_fu_78 |                8 |             32 |
++----------------+-----------------------------------------------------------------+----------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 4      |                     1 |
+| 5      |                     1 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

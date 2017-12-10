@@ -1,0 +1,6 @@
+<annotationInfo>
+<item  id="31" filename="selector.cpp" linenumber="11" name="tmp_1" contextFuncName="select" moduleName="selector::select" rtlName="tmp_1_fu_116_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls"></item>
+<item  id="50" filename="selector.cpp" linenumber="32" name="tmp_2" contextFuncName="select" moduleName="selector::select" rtlName="tmp_2_fu_123_p4" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls"></item>
+<item  id="51" filename="selector.cpp" linenumber="32" name="icmp" contextFuncName="select" moduleName="selector::select" rtlName="icmp_fu_133_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="18" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls"></item>
+<item  id="25" filename="./selector.h" linenumber="14" name="" contextFuncName="selector" moduleName="selector" rtlName="grp_selector_select_fu_48" latency="1" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/selector/vivado_hls"></item>
+</annotationInfo>
