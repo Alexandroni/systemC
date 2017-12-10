@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="counter.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/counter.cpp"/>
     <originFiles name="counter.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/counter.h"/>
+    <originFiles name="counter.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/counter.cpp"/>
   </source>
   <testbench>
-    <originFiles name="main_test.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/main_test.cpp"/>
-    <originFiles name="result.golden.dat" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/result.golden.dat"/>
-    <originFiles name="tb_driver.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/tb_driver.cpp"/>
-    <originFiles name="tb_driver.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/tb_driver.h"/>
-    <originFiles name="tb_init.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/tb_init.cpp"/>
     <originFiles name="tb_init.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/tb_init.h"/>
+    <originFiles name="tb_init.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/tb_init.cpp"/>
+    <originFiles name="tb_driver.h" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/tb_driver.h"/>
+    <originFiles name="tb_driver.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/tb_driver.cpp"/>
+    <originFiles name="result.golden.dat" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/result.golden.dat"/>
+    <originFiles name="main_test.cpp" path="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/clock_division/vivado_hls/test/main_test.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

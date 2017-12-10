@@ -59,14 +59,18 @@
 								<option id="gnu.c.link.option.paths.929932497" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.c.link.option.libs.1417689916" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+								<option id="gnu.c.link.option.libs.1417689916" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.c.link.option.ldflags.1407276904" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1371998819" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.paths.2087980426" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.1482641852" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+								<option id="gnu.cpp.link.option.libs.1482641852" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.cpp.link.option.flags.2098096322" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.167250341" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -133,14 +137,18 @@
 								<option id="gnu.c.link.option.paths.1110127618" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.c.link.option.libs.1483615224" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+								<option id="gnu.c.link.option.libs.1483615224" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.c.link.option.ldflags.1492258143" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.955940782" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
 								<option id="gnu.cpp.link.option.paths.519594994" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.1781554197" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+								<option id="gnu.cpp.link.option.libs.1781554197" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.cpp.link.option.flags.1125799237" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.2023735657" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

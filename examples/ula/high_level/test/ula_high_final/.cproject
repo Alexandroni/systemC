@@ -27,7 +27,6 @@
 								<option id="gnu.cpp.compiler.option.include.paths.548601835" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
-									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/high_level/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
@@ -45,7 +44,6 @@
 								<option id="gnu.c.compiler.option.include.paths.244875545" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
-									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/high_level/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
@@ -61,14 +59,18 @@
 								<option id="gnu.c.link.option.paths.146399695" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.c.link.option.libs.88590405" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+								<option id="gnu.c.link.option.libs.88590405" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.c.link.option.ldflags.766742528" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.267808689" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.paths.598019692" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.104013143" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+								<option id="gnu.cpp.link.option.libs.104013143" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.cpp.link.option.flags.55939095" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1868024713" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -113,7 +115,6 @@
 								<option id="gnu.cpp.compiler.option.include.paths.320801912" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
-									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/high_level/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
@@ -126,7 +127,6 @@
 								<option id="gnu.c.compiler.option.include.paths.677927519" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
-									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/ula/high_level/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
@@ -137,14 +137,18 @@
 								<option id="gnu.c.link.option.paths.883719362" name="Library search path (-L)" superClass="gnu.c.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.c.link.option.libs.1536477652" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
+								<option id="gnu.c.link.option.libs.1536477652" name="Libraries (-l)" superClass="gnu.c.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.c.link.option.ldflags.764478288" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.29225818" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
 								<option id="gnu.cpp.link.option.paths.1263596637" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/lib"/>
 								</option>
-								<option id="gnu.cpp.link.option.libs.531234308" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
+								<option id="gnu.cpp.link.option.libs.531234308" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="systemc_debug"/>
+								</option>
 								<option id="gnu.cpp.link.option.flags.129542118" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1506376739" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

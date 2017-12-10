@@ -5,12 +5,12 @@
 ############################################################
 open_project contador
 set_top simple_counter
-add_files counter.cpp
 add_files counter.h
-add_files -tb Makefile
-add_files -tb estimulos.h
-add_files -tb main.cpp
+add_files counter.cpp
 add_files -tb monitor.h
+add_files -tb main.cpp
+add_files -tb estimulos.h
+add_files -tb Makefile
 open_solution "solution1"
 set_part {xc7a200tfbg676-2} -tool vivado
 create_clock -period 10 -name default

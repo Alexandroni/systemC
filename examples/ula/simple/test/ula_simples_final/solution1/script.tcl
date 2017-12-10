@@ -5,11 +5,11 @@
 ############################################################
 open_project ula_simples_final
 set_top ula_new
-add_files ula.cpp
 add_files ula.h
-add_files -tb estimulos.h
-add_files -tb main.cpp
+add_files ula.cpp
 add_files -tb monitor.h
+add_files -tb main.cpp
+add_files -tb estimulos.h
 open_solution "solution1"
 set_part {xc7a200tfbg676-2} -tool vivado
 create_clock -period 10 -name default

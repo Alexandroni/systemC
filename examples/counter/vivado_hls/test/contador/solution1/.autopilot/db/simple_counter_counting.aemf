@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1512774110000">
+  <ports id="1" name="start" type="PortType" originalName="simple_counter.start.m_if.Val" bitwidth="1">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="count_out" type="PortType" originalName="simple_counter.count_out.m_if.Val.V" bitwidth="10" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="simple_counter_aux_V" type="PortType" originalName="simple_counter.aux.V" bitwidth="10" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="45" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@ports.1"/>
+  <edges id="56" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="60" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="61" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="62" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="63" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="64" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="65" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="69" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@ports.2"/>
+  <edges id="70" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="72" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@ports.1"/>
+  <edges id="73" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="74" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="75" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="79" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="160" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0"/>
+  <edges id="161" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="162" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.2"/>
+  <edges id="163" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="164" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.0"/>
+  <blocks id="30" name="block_30" type="BlockType">
+    <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit2</controlInputObjs>
+    <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_37</controlOutputObjs>
+    <controlOutputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp" lineNumber="21" originalName="tmp" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" bitwidth="1" opcode="read" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="21" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <dataInputObjs>start</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="node_29" lineNumber="21" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="21" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <dataInputObjs>read</dataInputObjs>
+      <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
+      <controlInputObjs>block_37</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="counter.cpp">
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="37" name="block_37" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="v_V_1_load" lineNumber="22" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" bitwidth="10" opcode="load" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="22" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="v_V" lineNumber="22" originalName="v.V" fileName="counter.cpp" fileDirectory=".." rtlName="v_V_fu_98_p2" contextFuncName="counting" bitwidth="10" opcode="add" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="22" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="node_33" lineNumber="22" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="write" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="22" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>simple_counter_aux_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="node_34" lineNumber="23" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="write" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="23" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>count_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="node_35" lineNumber="23" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="store" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="23" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="node_36" lineNumber="24" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="24" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <controlInputObjs>_ZN7_ap_sc_7sc_core4waitEi.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="counter.cpp">
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>23</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="40" name="_ZN7_ap_sc_7sc_core4waitEi.exit" type="BlockType">
+    <controlInputObjs>block_30</controlInputObjs>
+    <controlInputObjs>block_37</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_30</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="node_38" lineNumber="25" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="wait" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="25" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="node_39" lineNumber="26" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="br" nodeLabel="2" m_display="0">
+      <inlineStackInfo fileName="counter.cpp" linenumber="26" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+      <controlInputObjs>block_30</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="counter.cpp">
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="17" region_type="1" typeName="Protocol" id="110" RegionName="__ssdm_reset__">
+    <basic_blocks id="27" name="_ZN7_ap_sc_7sc_core4waitEi.exit2" type="BlockType">
+      <controlOutputObjs>block_30</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="6" name="v_V_1" originalName="v.V" bitwidth="10" opcode="alloca" m_display="0">
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="node_20" lineNumber="16" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="write" m_display="0">
+        <inlineStackInfo fileName="counter.cpp" linenumber="16" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+        <dataOutputObjs>simple_counter_aux_V</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="node_21" lineNumber="17" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="write" m_display="0">
+        <inlineStackInfo fileName="counter.cpp" linenumber="17" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+        <dataOutputObjs>count_out</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="node_24" lineNumber="18" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="wait" nodeLabel="1" m_display="0">
+        <inlineStackInfo fileName="counter.cpp" linenumber="18" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="node_25" opcode="store" nodeLabel="1" m_display="0">
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="node_26" lineNumber="19" fileName="counter.cpp" fileDirectory=".." contextFuncName="counting" opcode="br" nodeLabel="1" m_display="0">
+        <inlineStackInfo fileName="counter.cpp" linenumber="19" fileDirectory="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test" functionName="counting"/>
+        <controlInputObjs>block_30</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="counter.cpp">
+        <validLinenumbers>16</validLinenumbers>
+        <validLinenumbers>17</validLinenumbers>
+        <validLinenumbers>18</validLinenumbers>
+        <validLinenumbers>19</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="v_V_1_reg_111">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <expressionNodes realName="v_V_1_fu_64">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="v_V_fu_98">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="StgValue_23_store_fu_90">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_68">
+    <nodeIds>20</nodeIds>
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_write_fu_76">
+    <nodeIds>21</nodeIds>
+    <nodeIds>34</nodeIds>
+  </ioNodes>
+  <ioNodes realName="StgValue_31_store_fu_106">
+    <nodeIds>35</nodeIds>
+  </ioNodes>
+  <ioNodes realName="v_V_1_load_load_fu_95">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_read_fu_84">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioPorts name="count_out">
+    <contents name="write">
+      <nodeIds>21</nodeIds>
+      <nodeIds>34</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="simple_counter_aux_V">
+    <contents name="write">
+      <nodeIds>20</nodeIds>
+      <nodeIds>33</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="start">
+    <contents name="read">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="8"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="10"/>
+    </transitions>
+    <transitions inState="3" outState="3">
+      <condition id="12"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="simple_counter::counting" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="3" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1">
+      <basicBlocks>27</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="Loop 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="-1" mType="1">
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>37</basicBlocks>
+      <basicBlocks>40</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

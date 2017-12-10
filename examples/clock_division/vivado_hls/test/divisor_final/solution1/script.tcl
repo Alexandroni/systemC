@@ -5,14 +5,14 @@
 ############################################################
 open_project divisor_final
 set_top simple_counter
-add_files counter.cpp
 add_files counter.h
-add_files -tb main_test.cpp
-add_files -tb result.golden.dat
-add_files -tb tb_driver.cpp
-add_files -tb tb_driver.h
-add_files -tb tb_init.cpp
+add_files counter.cpp
 add_files -tb tb_init.h
+add_files -tb tb_init.cpp
+add_files -tb tb_driver.h
+add_files -tb tb_driver.cpp
+add_files -tb result.golden.dat
+add_files -tb main_test.cpp
 open_solution "solution1"
 set_part {xc7a200tfbg676-2} -tool vivado
 create_clock -period 10 -name default
