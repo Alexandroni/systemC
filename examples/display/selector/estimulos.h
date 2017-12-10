@@ -2,7 +2,6 @@
 
 SC_MODULE(Estimulos)
 {
-	sc_out <sc_uint<10> > A;
 	sc_out <bool> reset;
 	sc_out <bool> start;
 
@@ -18,11 +17,7 @@ SC_MODULE(Estimulos)
 
 		start.write(1);
 		
-		A.write(985);
-		wait(4);
-
-		A.write(1023);
-		wait(4);
+		wait(20);
 
 
 		sc_stop();

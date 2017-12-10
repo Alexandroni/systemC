@@ -4,7 +4,7 @@ void selector::select(){
 
     //initialize
     counter = 0;
-    selected.write(1111);
+    selected.write(15);
 
     while(true){
 		if(start.read()){
@@ -12,19 +12,19 @@ void selector::select(){
 			
             switch (counter){
                 case 1:
-                    selected.write(0111);
+                    selected.write(7);
                     break;
                 case 2:
-                    selected.write(1011);
+                    selected.write(11);
                     break;
                 case 3:
-                    selected.write(1101);
+                    selected.write(13);
                     break;
                 case 4:
-                    selected.write(1110);
+                    selected.write(14);
                     break;
                 default:
-                    selected.write(1111);
+                    selected.write(15);
                     break;
             }//edn switch case
 
