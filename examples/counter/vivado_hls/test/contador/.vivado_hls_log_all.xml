@@ -12,7 +12,7 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (counter.cpp:21:6) in function 'simple_counter::counting' is an infinite loop." projectName="contador" solutionName="solution1" date="2017-12-08T21:01:48.233-0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] 'Loop-1' (counter.cpp:21:6) in function 'simple_counter::counting' is an infinite loop." projectName="contador" solutionName="solution1" date="2017-12-13T19:58:49.561-0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

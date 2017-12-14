@@ -1,0 +1,988 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Dec 11 13:07:34 2017
+# Process ID: 13801
+# Current directory: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog
+# Command line: vivado -notrace -mode batch -source run_vivado.tcl
+# Log file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/vivado.log
+# Journal file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
+[Mon Dec 11 13:07:48 2017] Launched synth_1...
+Run output will be captured here: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/synth_1/runme.log
+[Mon Dec 11 13:07:48 2017] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log translator.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source translator.tcl
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source translator.tcl -notrace
+Command: synth_design -top translator -part xc7a200tfbg676-2 -no_iobuf -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13932 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1347.195 ; gain = 83.996 ; free physical = 398 ; free virtual = 9986
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'translator' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.v:12]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.v:52]
+INFO: [Synth 8-638] synthesizing module 'translator_transleOg' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transleOg.v:58]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter AddressRange bound to: 4 - type: integer 
+	Parameter AddressWidth bound to: 2 - type: integer 
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transleOg.v:86]
+INFO: [Synth 8-638] synthesizing module 'translator_transleOg_ram' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transleOg.v:9]
+	Parameter DWIDTH bound to: 32 - type: integer 
+	Parameter AWIDTH bound to: 2 - type: integer 
+	Parameter MEM_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transleOg.v:25]
+INFO: [Synth 8-256] done synthesizing module 'translator_transleOg_ram' (1#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transleOg.v:9]
+INFO: [Synth 8-256] done synthesizing module 'translator_transleOg' (2#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transleOg.v:58]
+INFO: [Synth 8-638] synthesizing module 'translator_transform' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transform.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 15'b000000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 15'b000000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 15'b000000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 15'b000000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 15'b000000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 15'b000000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 15'b000000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 15'b000000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 15'b000000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 15'b000001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 15'b000010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 15'b000100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 15'b001000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 15'b010000000000000 
+	Parameter ap_ST_fsm_state15 bound to: 15'b100000000000000 
+INFO: [Synth 8-638] synthesizing module 'translator_urem_1bkb' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:158]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 14 - type: integer 
+	Parameter din0_WIDTH bound to: 10 - type: integer 
+	Parameter din1_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'translator_urem_1bkb_div' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:85]
+	Parameter in0_WIDTH bound to: 10 - type: integer 
+	Parameter in1_WIDTH bound to: 5 - type: integer 
+	Parameter out_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'translator_urem_1bkb_div_u' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:10]
+	Parameter in0_WIDTH bound to: 10 - type: integer 
+	Parameter in1_WIDTH bound to: 5 - type: integer 
+	Parameter out_WIDTH bound to: 10 - type: integer 
+	Parameter cal_WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'translator_urem_1bkb_div_u' (3#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:10]
+INFO: [Synth 8-256] done synthesizing module 'translator_urem_1bkb_div' (4#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:85]
+INFO: [Synth 8-256] done synthesizing module 'translator_urem_1bkb' (5#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:158]
+INFO: [Synth 8-638] synthesizing module 'translator_urem_7cud' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:158]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 11 - type: integer 
+	Parameter din0_WIDTH bound to: 7 - type: integer 
+	Parameter din1_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'translator_urem_7cud_div' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:85]
+	Parameter in0_WIDTH bound to: 7 - type: integer 
+	Parameter in1_WIDTH bound to: 5 - type: integer 
+	Parameter out_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'translator_urem_7cud_div_u' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:10]
+	Parameter in0_WIDTH bound to: 7 - type: integer 
+	Parameter in1_WIDTH bound to: 5 - type: integer 
+	Parameter out_WIDTH bound to: 7 - type: integer 
+	Parameter cal_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'translator_urem_7cud_div_u' (6#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:10]
+INFO: [Synth 8-256] done synthesizing module 'translator_urem_7cud_div' (7#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:85]
+INFO: [Synth 8-256] done synthesizing module 'translator_urem_7cud' (8#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:158]
+INFO: [Synth 8-638] synthesizing module 'translator_mul_mudEe' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_mul_mudEe.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 12 - type: integer 
+	Parameter din1_WIDTH bound to: 10 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'translator_mul_mudEe_DSP48_0' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_mul_mudEe.v:4]
+INFO: [Synth 8-256] done synthesizing module 'translator_mul_mudEe_DSP48_0' (9#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_mul_mudEe.v:4]
+INFO: [Synth 8-256] done synthesizing module 'translator_mul_mudEe' (10#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_mul_mudEe.v:14]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transform.v:548]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transform.v:552]
+WARNING: [Synth 8-6014] Unused sequential element div1_cast_reg_502_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transform.v:207]
+WARNING: [Synth 8-6014] Unused sequential element tmp_6_reg_509_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transform.v:209]
+WARNING: [Synth 8-6014] Unused sequential element tmp_4_reg_515_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transform.v:215]
+INFO: [Synth 8-256] done synthesizing module 'translator_transform' (11#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_transform.v:10]
+INFO: [Synth 8-256] done synthesizing module 'translator' (12#1) [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.v:12]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port addr0[1]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port addr0[0]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port ce0
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[31]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[30]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[29]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[28]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[27]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[26]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[25]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[24]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[23]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[22]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[21]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[20]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[19]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[18]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[17]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[16]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[15]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[14]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[13]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[12]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[11]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[10]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[9]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[8]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[7]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[6]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[5]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[4]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[3]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[2]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[1]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d0[0]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port we0
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port addr1[1]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port addr1[0]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port ce1
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[31]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[30]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[29]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[28]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[27]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[26]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[25]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[24]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[23]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[22]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[21]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[20]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[19]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[18]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[17]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[16]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[15]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[14]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[13]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[12]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[11]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[10]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[9]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[8]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[7]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[6]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[5]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[4]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[3]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[2]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[1]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port d1[0]
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port we1
+WARNING: [Synth 8-3331] design translator_transleOg_ram has unconnected port clk
+WARNING: [Synth 8-3331] design translator_transleOg has unconnected port reset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1389.734 ; gain = 126.535 ; free physical = 407 ; free virtual = 9997
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1389.734 ; gain = 126.535 ; free physical = 407 ; free virtual = 9997
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc]
+Finished Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.11 . Memory (MB): peak = 1760.730 ; gain = 0.004 ; free physical = 123 ; free virtual = 9674
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:56 . Memory (MB): peak = 1760.730 ; gain = 497.531 ; free physical = 201 ; free virtual = 9753
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:56 . Memory (MB): peak = 1760.730 ; gain = 497.531 ; free physical = 201 ; free virtual = 9754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:56 . Memory (MB): peak = 1760.730 ; gain = 497.531 ; free physical = 202 ; free virtual = 9754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:56 . Memory (MB): peak = 1760.730 ; gain = 497.531 ; free physical = 185 ; free virtual = 9746
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 8     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module translator 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+Module translator_urem_1bkb_div_u 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+Module translator_urem_1bkb_div 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module translator_urem_7cud_div_u 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+Module translator_urem_7cud_div 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module translator_transform 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/divisor0_reg[4:0]' into 'grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/divisor0_reg[4:0]' [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:129]
+WARNING: [Synth 8-6014] Unused sequential element grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/done_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:142]
+WARNING: [Synth 8-6014] Unused sequential element grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/quot_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:148]
+WARNING: [Synth 8-6014] Unused sequential element grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/remd_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:149]
+WARNING: [Synth 8-6014] Unused sequential element grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/done_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:142]
+WARNING: [Synth 8-6014] Unused sequential element grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/quot_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:148]
+WARNING: [Synth 8-6014] Unused sequential element grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/remd_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:149]
+WARNING: [Synth 8-6014] Unused sequential element grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/divisor0_reg was removed.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:129]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg' and it is trimmed from '10' to '9' bits. [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_1bkb.v:42]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/remd_tmp_reg' and it is trimmed from '7' to '6' bits. [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator_urem_7cud.v:42]
+DSP Report: Generating DSP grp_translator_transform_fu_48/translator_mul_mudEe_U3/translator_mul_mudEe_DSP48_0_U/in00, operation Mode is: A*B.
+DSP Report: operator grp_translator_transform_fu_48/translator_mul_mudEe_U3/translator_mul_mudEe_DSP48_0_U/in00 is absorbed into DSP grp_translator_transform_fu_48/translator_mul_mudEe_U3/translator_mul_mudEe_DSP48_0_U/in00.
+DSP Report: Generating DSP grp_translator_transform_fu_48/translator_mul_mudEe_U4/translator_mul_mudEe_DSP48_0_U/in00, operation Mode is: A*B.
+DSP Report: operator grp_translator_transform_fu_48/translator_mul_mudEe_U4/translator_mul_mudEe_DSP48_0_U/in00 is absorbed into DSP grp_translator_transform_fu_48/translator_mul_mudEe_U4/translator_mul_mudEe_DSP48_0_U/in00.
+WARNING: [Synth 8-3331] design translator has unconnected port whichDisp[3]
+WARNING: [Synth 8-3331] design translator has unconnected port whichDisp[2]
+WARNING: [Synth 8-3331] design translator has unconnected port whichDisp[1]
+WARNING: [Synth 8-3331] design translator has unconnected port whichDisp[0]
+INFO: [Synth 8-3886] merging instance 'translator_transformed_reg[0]' (FDE) to 'toDisp_reg[0]'
+INFO: [Synth 8-3886] merging instance 'translator_transformed_reg[1]' (FDE) to 'toDisp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'translator_transformed_reg[2]' (FDE) to 'toDisp_reg[2]'
+INFO: [Synth 8-3886] merging instance 'translator_transformed_reg[3]' (FDE) to 'toDisp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'translator_transformed_reg[4]' (FDE) to 'toDisp_reg[4]'
+INFO: [Synth 8-3886] merging instance 'translator_transformed_reg[5]' (FDE) to 'toDisp_reg[5]'
+INFO: [Synth 8-3886] merging instance 'translator_transformed_reg[6]' (FDE) to 'toDisp_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\toDisp_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\toDisp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\toDisp_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\toDisp_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\toDisp_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\toDisp_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\toDisp_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/start0_reg) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[10]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[9]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[8]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[7]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/r_stage_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[9]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[8]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[7]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend_tmp_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[9]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[8]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[7]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/dividend0_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[9]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[8]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[7]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/dividend0_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/divisor0_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/divisor0_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/divisor0_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/divisor0_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/divisor0_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/divisor0_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/divisor0_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/divisor0_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/divisor0_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/divisor0_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[8]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[7]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_1bkb_U1/translator_urem_1bkb_div_U/translator_urem_1bkb_div_u_0/remd_tmp_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/start0_reg) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[7]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/r_stage_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/dividend0_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/dividend0_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/dividend0_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/dividend0_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/dividend0_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/dividend0_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/dividend0_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend0_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend0_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend0_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend0_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend0_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend0_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend0_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/remd_tmp_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/remd_tmp_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/remd_tmp_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/remd_tmp_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/remd_tmp_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/remd_tmp_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/divisor0_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/divisor0_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/divisor0_reg[2]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/divisor0_reg[1]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/divisor0_reg[0]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend_tmp_reg[6]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend_tmp_reg[5]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend_tmp_reg[4]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend_tmp_reg[3]) is unused and will be removed from module translator.
+WARNING: [Synth 8-3332] Sequential element (grp_translator_transform_fu_48/translator_urem_7cud_U2/translator_urem_7cud_div_U/translator_urem_7cud_div_u_0/dividend_tmp_reg[2]) is unused and will be removed from module translator.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:57 . Memory (MB): peak = 1760.730 ; gain = 497.531 ; free physical = 171 ; free virtual = 9735
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|translator_mul_mudEe_DSP48_0 | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|translator_mul_mudEe_DSP48_0 | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-----------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:11 . Memory (MB): peak = 1760.730 ; gain = 497.531 ; free physical = 131 ; free virtual = 9581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:12 . Memory (MB): peak = 1760.730 ; gain = 497.531 ; free physical = 130 ; free virtual = 9581
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.734 ; gain = 505.535 ; free physical = 129 ; free virtual = 9581
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.738 ; gain = 505.539 ; free physical = 124 ; free virtual = 9580
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.738 ; gain = 505.539 ; free physical = 124 ; free virtual = 9580
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.738 ; gain = 505.539 ; free physical = 124 ; free virtual = 9580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.738 ; gain = 505.539 ; free physical = 124 ; free virtual = 9581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.738 ; gain = 505.539 ; free physical = 124 ; free virtual = 9580
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.738 ; gain = 505.539 ; free physical = 125 ; free virtual = 9581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     2|
+|2     |LUT1    |    24|
+|3     |FDRE    |    10|
++------+--------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+-------------------------------+------+
+|      |Instance                             |Module                         |Cells |
++------+-------------------------------------+-------------------------------+------+
+|1     |top                                  |                               |    36|
+|2     |  grp_translator_transform_fu_48     |translator_transform           |    36|
+|3     |    translator_mul_mudEe_U3          |translator_mul_mudEe           |    13|
+|4     |      translator_mul_mudEe_DSP48_0_U |translator_mul_mudEe_DSP48_0_1 |    13|
+|5     |    translator_mul_mudEe_U4          |translator_mul_mudEe_0         |    13|
+|6     |      translator_mul_mudEe_DSP48_0_U |translator_mul_mudEe_DSP48_0   |    13|
++------+-------------------------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:12 . Memory (MB): peak = 1768.738 ; gain = 505.539 ; free physical = 125 ; free virtual = 9581
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 147 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 1768.738 ; gain = 134.543 ; free physical = 189 ; free virtual = 9646
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:01:13 . Memory (MB): peak = 1768.742 ; gain = 505.539 ; free physical = 189 ; free virtual = 9646
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 194 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:01:16 . Memory (MB): peak = 1768.742 ; gain = 518.914 ; free physical = 152 ; free virtual = 9624
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/synth_1/translator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file translator_utilization_synth.rpt -pb translator_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.77 . Memory (MB): peak = 1768.742 ; gain = 0.000 ; free physical = 158 ; free virtual = 9622
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 13:09:20 2017...
+[Mon Dec 11 13:09:20 2017] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:55 ; elapsed = 00:01:32 . Memory (MB): peak = 1267.191 ; gain = 3.988 ; free physical = 749 ; free virtual = 10211
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg676-2
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc:2]
+Finished Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 1559.562 ; gain = 292.371 ; free physical = 317 ; free virtual = 9846
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1560.559 ; gain = 0.996 ; free physical = 315 ; free virtual = 9845
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+report_timing: Time (s): cpu = 00:00:14 ; elapsed = 00:00:40 . Memory (MB): peak = 2030.203 ; gain = 469.645 ; free physical = 122 ; free virtual = 9461
+[Mon Dec 11 13:10:28 2017] Launched impl_1...
+Run output will be captured here: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/runme.log
+[Mon Dec 11 13:10:28 2017] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log translator.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source translator.tcl -notrace
+
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source translator.tcl -notrace
+Command: open_checkpoint /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1247.809 ; gain = 0.000 ; free physical = 147 ; free virtual = 9319
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-14341-localhost.localdomain/dcp3/translator.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc:2]
+Finished Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-14341-localhost.localdomain/dcp3/translator.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.3 (64-bit) build 2018833
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 1558.598 ; gain = 310.793 ; free physical = 131 ; free virtual = 8991
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1608.621 ; gain = 50.020 ; free physical = 141 ; free virtual = 8962
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: eb026918
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 24 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: eb026918
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 12 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2032.242 ; gain = 0.000 ; free physical = 99 ; free virtual = 8339
+Ending Logic Optimization Task | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8338
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:02 . Memory (MB): peak = 2032.242 ; gain = 0.000 ; free physical = 106 ; free virtual = 8344
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:56 . Memory (MB): peak = 2032.242 ; gain = 473.645 ; free physical = 99 ; free virtual = 8332
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:11 . Memory (MB): peak = 2056.258 ; gain = 24.016 ; free physical = 181 ; free virtual = 8278
+INFO: [runtcl-4] Executing : report_drc -file translator_drc_opted.rpt -pb translator_drc_opted.pb -rpx translator_drc_opted.rpx
+Command: report_drc -file translator_drc_opted.rpt -pb translator_drc_opted.pb -rpx translator_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2068.258 ; gain = 12.000 ; free physical = 142 ; free virtual = 8270
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 129 ; free virtual = 8264
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 129 ; free virtual = 8264
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 129 ; free virtual = 8264
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 138 ; free virtual = 8285
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 139 ; free virtual = 8294
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 133 ; free virtual = 8293
+Phase 1 Placer Initialization | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 133 ; free virtual = 8293
+
+Phase 2 Final Placement Cleanup
+Phase 2 Final Placement Cleanup | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 135 ; free virtual = 8294
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 140 ; free virtual = 8300
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2099.898 ; gain = 31.641 ; free physical = 140 ; free virtual = 8300
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file translator_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2099.898 ; gain = 0.000 ; free physical = 119 ; free virtual = 8281
+INFO: [runtcl-4] Executing : report_utilization -file translator_utilization_placed.rpt -pb translator_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.41 . Memory (MB): peak = 2099.898 ; gain = 0.000 ; free physical = 129 ; free virtual = 8293
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file translator_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2099.898 ; gain = 0.000 ; free physical = 129 ; free virtual = 8293
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 0 ConstDB: 0 ShapeSum: 0 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:47 . Memory (MB): peak = 2323.152 ; gain = 223.254 ; free physical = 135 ; free virtual = 7985
+Post Restoration Checksum: NetGraph: 0 NumContArr: 0 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:47 . Memory (MB): peak = 2323.156 ; gain = 223.258 ; free physical = 134 ; free virtual = 7987
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 2340.152 ; gain = 240.254 ; free physical = 123 ; free virtual = 7967
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 2340.152 ; gain = 240.254 ; free physical = 132 ; free virtual = 7926
+
+Phase 2.4 Timing Verification
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 145 ; free virtual = 7883
+Phase 2.4 Timing Verification | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 145 ; free virtual = 7884
+INFO: [Route 35-61] The design met the timing requirement.
+
+Phase 2.5 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2.5 Route finalize | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 140 ; free virtual = 7880
+
+Phase 2.6 Verifying routed nets
+
+ Verification completed successfully
+Phase 2.6 Verifying routed nets | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 140 ; free virtual = 7879
+
+Phase 2.7 Depositing Routes
+Phase 2.7 Depositing Routes | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 137 ; free virtual = 7878
+Phase 2 Router Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 138 ; free virtual = 7879
+
+Phase 3 Post Router Timing
+Phase 3 Post Router Timing | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 137 ; free virtual = 7879
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:52 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 155 ; free virtual = 7902
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:57 . Memory (MB): peak = 2355.672 ; gain = 255.773 ; free physical = 196 ; free virtual = 7954
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file translator_drc_routed.rpt -pb translator_drc_routed.pb -rpx translator_drc_routed.rpx
+Command: report_drc -file translator_drc_routed.rpt -pb translator_drc_routed.pb -rpx translator_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file translator_methodology_drc_routed.rpt -pb translator_methodology_drc_routed.pb -rpx translator_methodology_drc_routed.rpx
+Command: report_methodology -file translator_methodology_drc_routed.rpt -pb translator_methodology_drc_routed.pb -rpx translator_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file translator_power_routed.rpt -pb translator_power_summary_routed.pb -rpx translator_power_routed.rpx
+Command: report_power -file translator_power_routed.rpt -pb translator_power_summary_routed.pb -rpx translator_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file translator_route_status.rpt -pb translator_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file translator_timing_summary_routed.rpt -warn_on_violation  -rpx translator_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file translator_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file translator_clock_utilization_routed.rpt
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 13:14:01 2017...
+[Mon Dec 11 13:14:14 2017] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00.72 ; elapsed = 00:03:46 . Memory (MB): peak = 2064.211 ; gain = 7.992 ; free physical = 1223 ; free virtual = 9099
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/.Xil/Vivado-13801-localhost.localdomain/dcp4/translator.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: Port ap_clk is not connected to any net, cannot set HD.CLK_SRC. [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc:2]
+Finished Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/.Xil/Vivado-13801-localhost.localdomain/dcp4/translator.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2152.820 ; gain = 88.609 ; free physical = 1110 ; free virtual = 9006
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2173.824 ; gain = 0.000 ; free physical = 1102 ; free virtual = 8999
+
+
+Implementation tool: Xilinx Vivado v.2017.3
+Project:             translator
+Solution:            solution1
+Device target:       xc7a200tfbg676-2
+Report date:         Mon Dec 11 13:14:20 -02 2017
+
+#=== Post-Implementation Resource usage ===
+SLICE:            0
+LUT:              0
+FF:               0
+DSP:              0
+BRAM:             0
+SRL:              0
+#=== Final timing ===
+CP required:    10.000
+CP achieved post-synthesis:    NA
+CP achieved post-implementation:    NA
+No Sequential Path
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 13:14:20 2017...

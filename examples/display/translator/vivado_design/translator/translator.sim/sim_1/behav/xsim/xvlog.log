@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module translator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_mul_mudEe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module translator_mul_mudEe_DSP48_0
+INFO: [VRFC 10-311] analyzing module translator_mul_mudEe
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_transform.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module translator_transform
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_transleOg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module translator_transleOg_ram
+INFO: [VRFC 10-311] analyzing module translator_transleOg
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_urem_1bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module translator_urem_1bkb_div_u
+INFO: [VRFC 10-311] analyzing module translator_urem_1bkb_div
+INFO: [VRFC 10-311] analyzing module translator_urem_1bkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_urem_7cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module translator_urem_7cud_div_u
+INFO: [VRFC 10-311] analyzing module translator_urem_7cud_div
+INFO: [VRFC 10-311] analyzing module translator_urem_7cud
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sources_1/ip/translator_0/sim/translator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module translator_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sources_1/new/top_translate.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_translate
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sim_1/new/tb_translator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_translator

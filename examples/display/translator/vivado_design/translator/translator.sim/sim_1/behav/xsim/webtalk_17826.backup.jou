@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Sun Dec 10 23:47:42 2017
+# Process ID: 17826
+# Current directory: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.sim/sim_1/behav/xsim/xsim.dir/tb_translator_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.sim/sim_1/behav/xsim/xsim.dir/tb_translator_behav/webtalk/xsim_webtalk.tcl -notrace

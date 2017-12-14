@@ -1,0 +1,26 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.3/bin/unwrapped/lnx64.o/xelab -wto 86bdce3c9d0b4f96ab0ac3288d7d4342 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_translator_behav xil_defaultlib.tb_translator xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.translator_transleOg_ram
+Compiling module xil_defaultlib.translator_transleOg(DataWidth=3...
+Compiling module xil_defaultlib.translator_urem_1bkb_div_u(in0_W...
+Compiling module xil_defaultlib.translator_urem_1bkb_div(in0_WID...
+Compiling module xil_defaultlib.translator_urem_1bkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.translator_urem_7cud_div_u(in0_W...
+Compiling module xil_defaultlib.translator_urem_7cud_div(in0_WID...
+Compiling module xil_defaultlib.translator_urem_7cud(ID=1,NUM_ST...
+Compiling module xil_defaultlib.translator_mul_mudEe_DSP48_0
+Compiling module xil_defaultlib.translator_mul_mudEe(ID=1,NUM_ST...
+Compiling module xil_defaultlib.translator_transform
+Compiling module xil_defaultlib.translator
+Compiling module xil_defaultlib.translator_0
+Compiling module xil_defaultlib.top_translate
+Compiling module xil_defaultlib.tb_translator
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_translator_behav

@@ -1,13 +1,13 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'simple_counter_counting'" level="0">
-<item name = "Date">Fri Dec  8 21:01:49 2017
+<item name = "Date">Wed Dec 13 19:58:49 2017
 </item>
 <item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
 <item name = "Project">contador</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">artix7</item>
-<item name = "Target device">xc7a200tfbg676-2</item>
+<item name = "Target device">xc7a35ticpg236-1l</item>
 </section>
 
 <section name = "Performance Estimates" level="0">
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 3.10, 1.25</column>
+<column name="ap_clk">10.00, 3.79, 1.25</column>
 </table>
 </item>
 </section>

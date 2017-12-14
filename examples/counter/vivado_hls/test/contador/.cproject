@@ -29,6 +29,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.85034800" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
@@ -46,6 +47,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.689229078" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
@@ -117,6 +119,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.747305832" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
@@ -129,6 +132,7 @@
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado/2017.3/include/etc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1241032642" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>

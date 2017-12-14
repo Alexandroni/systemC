@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1312" content="Analyzing design file &apos;translator.cpp&apos; ... " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:01:46 ; elapsed = 00:01:13 . Memory (MB): peak = 448.883 ; gain = 13.379 ; free physical = 883 ; free virtual = 10432" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Linking Time (s): cpu = 00:01:48 ; elapsed = 00:01:15 . Memory (MB): peak = 448.883 ; gain = 13.379 ; free physical = 880 ; free virtual = 10431" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;translate&apos; into &apos;translator::transform&apos; (translator.cpp:58)." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;translate&apos; into &apos;translator::transform&apos; (translator.cpp:61)." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;translate&apos; into &apos;translator::transform&apos; (translator.cpp:64)." tag=""/>
+	<Message prefix="[XFORM 203-603]" severity="info" keynum="792" content="Inlining function &apos;translate&apos; into &apos;translator::transform&apos; (translator.cpp:67)." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:01:49 ; elapsed = 00:01:18 . Memory (MB): peak = 449.250 ; gain = 13.746 ; free physical = 859 ; free virtual = 10422" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:01:49 ; elapsed = 00:01:18 . Memory (MB): peak = 449.250 ; gain = 13.746 ; free physical = 853 ; free virtual = 10417" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:01:50 ; elapsed = 00:01:19 . Memory (MB): peak = 576.879 ; gain = 141.375 ; free physical = 826 ; free virtual = 10394" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:01:51 ; elapsed = 00:01:20 . Memory (MB): peak = 576.879 ; gain = 141.375 ; free physical = 815 ; free virtual = 10384" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="317" content="Elaborating SystemC module &apos;translator&apos;." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="310" content="Performing SystemC synthesis linting." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="313" content="Analyzing ports and processes." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="312" content="Process &apos;translator::transform&apos; has no reset block." tag=""/>
+	<Message prefix="[SCA 200-201]" severity="info" keynum="306" content="Module &apos;translator&apos; has no clock port, it is a combinational module." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1495" content="Synthesizing SystemC module [ translator ]" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1496" content="Found SystemC process: &apos;translator_transform&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;translator_transform&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;translator_transform&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-35]" severity="warn" keynum="91" content="Protocol &apos;SC_METHOD&apos; contains conflicting I/O accesses:
+   wire write on port &apos;translator_transformed&apos; (translator.cpp:67) and wire read on port &apos;translator_transformed&apos; (translator.cpp:71) occur in the same clock cycle." tag=""/>
+	<Message prefix="[SCHED 204-36]" severity="warn" keynum="94" content="Invalid protocol &apos;SC_METHOD&apos;: additional &apos;wait&apos;(s) required after the multi-cycle operation:
+   &apos;urem&apos; operation (&apos;tmp&apos;, translator.cpp:48)." tag=""/>
+	<Message prefix="[SCHED 204-36]" severity="warn" keynum="94" content="Invalid protocol &apos;SC_METHOD&apos;: additional &apos;wait&apos;(s) required after the multi-cycle operation:
+   &apos;urem&apos; operation (&apos;tmp_2&apos;, translator.cpp:49)." tag=""/>
+	<Message prefix="[SCHED 204-36]" severity="warn" keynum="92" content="Unable to schedule the protocol specified by region &apos;SC_METHOD&apos;." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 81.93 seconds; current allocated memory: 90.873 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.33 seconds; current allocated memory: 91.309 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;translator_transform&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="377" content="Scheduling is infeasible for cycle fixed SC_METHOD {translator::transform}." tag=""/>
+	<Message prefix="[RTGEN 206-101]" severity="warn" keynum="376" content="Please check and refine your SC_METHOD code." tag=""/>
+	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;translator_urem_10ns_5ns_10_14_seq_1&apos; to &apos;translator_urem_1bkb&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;translator_urem_7ns_5ns_7_11_seq_1&apos; to &apos;translator_urem_7cud&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;translator_mul_mul_12ns_10ns_22_1_1&apos; to &apos;translator_mul_mudEe&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;translator_mul_mudEe&apos;: 2 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;translator_urem_1bkb&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="368" content="Generating core module &apos;translator_urem_7cud&apos;: 1 instance(s)." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;translator_transform&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.44 seconds; current allocated memory: 92.003 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1385" content="Synthesizing &apos;translator&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="info" keynum="HLS_42_1438" content="-- Implementing module &apos;translator&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="info" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.26 seconds; current allocated memory: 93.681 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="info" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="info" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.05 seconds; current allocated memory: 93.758 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;translator&apos; " tag=""/>
+	<Message prefix="[HLS 200-10]" severity="info" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;translator/number&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;translator/whichDisp&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="info" keynum="73" content="Setting interface mode on port &apos;translator/toDisp&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[SYN 201-210]" severity="info" keynum="402" content="Renamed object name &apos;translator_translator_digits&apos; to &apos;translator_transleOg&apos; due to the length limit 20" tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="info" keynum="369" content="Finished creating RTL model for &apos;translator&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="474" content=" Elapsed time: 0.13 seconds; current allocated memory: 93.923 MB." tag=""/>
+	<Message prefix="[RTMG 210-282]" severity="info" keynum="RTMG_282_1796" content="Generating pipelined core: &apos;translator_urem_1bkb_div&apos;" tag=""/>
+	<Message prefix="[RTMG 210-282]" severity="info" keynum="RTMG_282_1796" content="Generating pipelined core: &apos;translator_urem_7cud_div&apos;" tag=""/>
+	<Message prefix="[RTMG 210-278]" severity="info" keynum="RTMG_278_1790" content="Implementing memory &apos;translator_transleOg_ram (RAM)&apos; using distributed RAMs." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="info" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:01:52 ; elapsed = 00:01:24 . Memory (MB): peak = 576.879 ; gain = 141.375 ; free physical = 795 ; free virtual = 10375" tag=""/>
+	<Message prefix="[SYSC 207-301]" severity="info" keynum="SYSC_301_1065" content="Generating SystemC RTL for translator." tag=""/>
+	<Message prefix="[VHDL 208-304]" severity="info" keynum="VHDL_304_1066" content="Generating VHDL RTL for translator." tag=""/>
+	<Message prefix="[VLOG 209-307]" severity="info" keynum="VLOG_307_1067" content="Generating Verilog RTL for translator." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="info" keynum="472" content="Total elapsed time: 83.58 seconds; peak allocated memory: 93.923 MB." tag=""/>
+</Messages>

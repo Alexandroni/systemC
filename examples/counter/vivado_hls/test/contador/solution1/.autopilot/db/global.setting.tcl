@@ -40,11 +40,11 @@ set ExportMCPathFlag "0"
 set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
-set TargetInfo "xc7a200t:fbg676:-2"
+set TargetInfo "xc7a35ti:cpg236:-1l"
 set SourceFiles {sc ../../counter.cpp c {}}
 set SourceFlags {sc {{}} c {}}
 set DirectiveFile {/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/contador/solution1/solution1.directive}
-set TBFiles {verilog {../../monitor.h ../../main.cpp ../../estimulos.h ../../Makefile} bc {../../monitor.h ../../main.cpp ../../estimulos.h ../../Makefile} sc {../../monitor.h ../../main.cpp ../../estimulos.h ../../Makefile} vhdl {../../monitor.h ../../main.cpp ../../estimulos.h ../../Makefile} c {} cas {../../monitor.h ../../main.cpp ../../estimulos.h ../../Makefile}}
+set TBFiles {verilog {../../Makefile ../../estimulos.h ../../main.cpp ../../monitor.h} bc {../../Makefile ../../estimulos.h ../../main.cpp ../../monitor.h} sc {../../Makefile ../../estimulos.h ../../main.cpp ../../monitor.h} vhdl {../../Makefile ../../estimulos.h ../../main.cpp ../../monitor.h} c {} cas {../../Makefile ../../estimulos.h ../../main.cpp ../../monitor.h}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

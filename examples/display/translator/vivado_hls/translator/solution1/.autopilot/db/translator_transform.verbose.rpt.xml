@@ -1,0 +1,146 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'translator_transform'" level="0">
+<item name = "Date">Mon Dec 11 13:07:01 2017
+</item>
+<item name = "Version">2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)</item>
+<item name = "Project">translator</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">artix7</item>
+<item name = "Target device">xc7a200tfbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 6.35, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">14, 14, 14, 14, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, 2, -, -</column>
+<column name="Expression">-, -, 0, 78</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 224, 108</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 311</column>
+<column name="Register">-, -, 26, -</column>
+<specialColumn name="Available">730, 740, 269200, 129000</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="translator_urem_1bkb_U1">translator_urem_1bkb, 0, 0, 130, 69</column>
+<column name="translator_urem_7cud_U2">translator_urem_7cud, 0, 0, 94, 39</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="translator_mul_mudEe_U3">translator_mul_mudEe, i0 * i1</column>
+<column name="translator_mul_mudEe_U4">translator_mul_mudEe, i0 * i1</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="tmp_5_fu_398_p2">+, 0, 0, 13, 3, 4</column>
+<column name="ap_condition_473">and, 0, 0, 8, 1, 1</column>
+<column name="ap_condition_485">and, 0, 0, 8, 1, 1</column>
+<column name="ap_condition_496">and, 0, 0, 8, 1, 1</column>
+<column name="tmp_3_fu_393_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="tmp_6_fu_383_p2">icmp, 0, 0, 13, 10, 6</column>
+<column name="p_cast_cast_fu_448_p3">select, 0, 0, 7, 1, 1</column>
+<column name="tmp_4_fu_403_p3">select, 0, 0, 4, 1, 4</column>
+<column name="valor_assign_3_fu_415_p2">xor, 0, 0, 8, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">65, 16, 1, 16</column>
+<column name="ap_phi_mux_p_0_i1_phi_fu_283_p22">53, 12, 7, 84</column>
+<column name="ap_phi_mux_p_0_i2_phi_fu_245_p22">53, 12, 7, 84</column>
+<column name="ap_phi_mux_p_0_i_phi_fu_321_p22">53, 12, 7, 84</column>
+<column name="translator_digits_address0">15, 3, 2, 6</column>
+<column name="translator_digits_address1">15, 3, 2, 6</column>
+<column name="translator_digits_d0">15, 3, 32, 96</column>
+<column name="translator_digits_d1">15, 3, 32, 96</column>
+<column name="translator_transformed_o">27, 5, 32, 160</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="div1_cast_reg_502">4, 0, 4, 0</column>
+<column name="div_cast_reg_497">7, 0, 7, 0</column>
+<column name="tmp_4_reg_515">4, 0, 4, 0</column>
+<column name="tmp_6_reg_509">1, 0, 1, 0</column>
+<column name="val_V_reg_490">10, 0, 10, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, translator::transform, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, translator::transform, return value</column>
+<column name="number">in, 10, ap_none, number, pointer</column>
+<column name="whichDisp">in, 4, ap_none, whichDisp, pointer</column>
+<column name="toDisp">out, 7, ap_vld, toDisp, pointer</column>
+<column name="toDisp_ap_vld">out, 1, ap_vld, toDisp, pointer</column>
+<column name="translator_disp">out, 32, ap_vld, translator_disp, pointer</column>
+<column name="translator_disp_ap_vld">out, 1, ap_vld, translator_disp, pointer</column>
+<column name="translator_digits_address0">out, 2, ap_memory, translator_digits, array</column>
+<column name="translator_digits_ce0">out, 1, ap_memory, translator_digits, array</column>
+<column name="translator_digits_we0">out, 1, ap_memory, translator_digits, array</column>
+<column name="translator_digits_d0">out, 32, ap_memory, translator_digits, array</column>
+<column name="translator_digits_address1">out, 2, ap_memory, translator_digits, array</column>
+<column name="translator_digits_ce1">out, 1, ap_memory, translator_digits, array</column>
+<column name="translator_digits_we1">out, 1, ap_memory, translator_digits, array</column>
+<column name="translator_digits_d1">out, 32, ap_memory, translator_digits, array</column>
+<column name="translator_transformed_i">in, 32, ap_ovld, translator_transformed, pointer</column>
+<column name="translator_transformed_o">out, 32, ap_ovld, translator_transformed, pointer</column>
+<column name="translator_transformed_o_ap_vld">out, 1, ap_ovld, translator_transformed, pointer</column>
+</table>
+</item>
+</section>
+</profile>

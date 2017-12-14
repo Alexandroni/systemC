@@ -7,7 +7,7 @@
 <UserAssignments>
 <unit>ns</unit>
 <ProductFamily>artix7</ProductFamily>
-<Part>xc7a200tfbg676-2</Part>
+<Part>xc7a35ticpg236-1l</Part>
 <TopModelName>simple_counter</TopModelName>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
@@ -17,7 +17,7 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.10</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.79</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -37,10 +37,10 @@
 <DSP48E>0</DSP48E>
 </Resources>
 <AvailableResources>
-<BRAM_18K>730</BRAM_18K>
-<DSP48E>740</DSP48E>
-<FF>269200</FF>
-<LUT>129000</LUT>
+<BRAM_18K>100</BRAM_18K>
+<DSP48E>90</DSP48E>
+<FF>41600</FF>
+<LUT>20800</LUT>
 </AvailableResources>
 </AreaEstimates>
 

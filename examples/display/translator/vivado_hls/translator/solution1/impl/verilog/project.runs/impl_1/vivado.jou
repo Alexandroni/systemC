@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Dec 11 13:10:31 2017
+# Process ID: 14341
+# Current directory: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1
+# Command line: vivado -log translator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source translator.tcl -notrace
+# Log file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator.vdi
+# Journal file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source translator.tcl -notrace

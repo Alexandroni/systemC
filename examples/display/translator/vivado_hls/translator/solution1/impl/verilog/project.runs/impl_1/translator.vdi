@@ -1,0 +1,298 @@
+#-----------------------------------------------------------
+# Vivado v2017.3 (64-bit)
+# SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+# IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+# Start of session at: Mon Dec 11 13:10:31 2017
+# Process ID: 14341
+# Current directory: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1
+# Command line: vivado -log translator.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source translator.tcl -notrace
+# Log file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator.vdi
+# Journal file: /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source translator.tcl -notrace
+Command: open_checkpoint /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1247.809 ; gain = 0.000 ; free physical = 147 ; free virtual = 9319
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.3
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-14341-localhost.localdomain/dcp3/translator.xdc]
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/translator.xdc:2]
+Finished Parsing XDC File [/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/.Xil/Vivado-14341-localhost.localdomain/dcp3/translator.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.3 (64-bit) build 2018833
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 1558.598 ; gain = 310.793 ; free physical = 131 ; free virtual = 8991
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1608.621 ; gain = 50.020 ; free physical = 141 ; free virtual = 8962
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: eb026918
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 24 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: eb026918
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 12 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8339
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2032.242 ; gain = 0.000 ; free physical = 99 ; free virtual = 8339
+Ending Logic Optimization Task | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:04 . Memory (MB): peak = 2032.242 ; gain = 0.004 ; free physical = 99 ; free virtual = 8338
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 52fd298c
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:02 . Memory (MB): peak = 2032.242 ; gain = 0.000 ; free physical = 106 ; free virtual = 8344
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:56 . Memory (MB): peak = 2032.242 ; gain = 473.645 ; free physical = 99 ; free virtual = 8332
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:11 . Memory (MB): peak = 2056.258 ; gain = 24.016 ; free physical = 181 ; free virtual = 8278
+INFO: [runtcl-4] Executing : report_drc -file translator_drc_opted.rpt -pb translator_drc_opted.pb -rpx translator_drc_opted.rpx
+Command: report_drc -file translator_drc_opted.rpt -pb translator_drc_opted.pb -rpx translator_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2068.258 ; gain = 12.000 ; free physical = 142 ; free virtual = 8270
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 129 ; free virtual = 8264
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 129 ; free virtual = 8264
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 129 ; free virtual = 8264
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2068.262 ; gain = 0.000 ; free physical = 138 ; free virtual = 8285
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 139 ; free virtual = 8294
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 133 ; free virtual = 8293
+Phase 1 Placer Initialization | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 133 ; free virtual = 8293
+
+Phase 2 Final Placement Cleanup
+Phase 2 Final Placement Cleanup | Checksum: e73f1132
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 135 ; free virtual = 8294
+INFO: [Place 30-281] No place-able instance is found; design doesn't contain any instance or all instances are placed
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2099.898 ; gain = 31.637 ; free physical = 140 ; free virtual = 8300
+INFO: [Common 17-83] Releasing license: Implementation
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2099.898 ; gain = 31.641 ; free physical = 140 ; free virtual = 8300
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file translator_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.53 . Memory (MB): peak = 2099.898 ; gain = 0.000 ; free physical = 119 ; free virtual = 8281
+INFO: [runtcl-4] Executing : report_utilization -file translator_utilization_placed.rpt -pb translator_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.41 . Memory (MB): peak = 2099.898 ; gain = 0.000 ; free physical = 129 ; free virtual = 8293
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file translator_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2099.898 ; gain = 0.000 ; free physical = 129 ; free virtual = 8293
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 0 ConstDB: 0 ShapeSum: 0 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:47 . Memory (MB): peak = 2323.152 ; gain = 223.254 ; free physical = 135 ; free virtual = 7985
+Post Restoration Checksum: NetGraph: 0 NumContArr: 0 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:47 . Memory (MB): peak = 2323.156 ; gain = 223.258 ; free physical = 134 ; free virtual = 7987
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 2340.152 ; gain = 240.254 ; free physical = 123 ; free virtual = 7967
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:48 . Memory (MB): peak = 2340.152 ; gain = 240.254 ; free physical = 132 ; free virtual = 7926
+
+Phase 2.4 Timing Verification
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 145 ; free virtual = 7883
+Phase 2.4 Timing Verification | Checksum: 00000000
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:50 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 145 ; free virtual = 7884
+INFO: [Route 35-61] The design met the timing requirement.
+
+Phase 2.5 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2.5 Route finalize | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 140 ; free virtual = 7880
+
+Phase 2.6 Verifying routed nets
+
+ Verification completed successfully
+Phase 2.6 Verifying routed nets | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 140 ; free virtual = 7879
+
+Phase 2.7 Depositing Routes
+Phase 2.7 Depositing Routes | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 137 ; free virtual = 7878
+Phase 2 Router Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 138 ; free virtual = 7879
+
+Phase 3 Post Router Timing
+Phase 3 Post Router Timing | Checksum: 00000000
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:51 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 137 ; free virtual = 7879
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:52 . Memory (MB): peak = 2355.668 ; gain = 255.770 ; free physical = 155 ; free virtual = 7902
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:58 ; elapsed = 00:00:57 . Memory (MB): peak = 2355.672 ; gain = 255.773 ; free physical = 196 ; free virtual = 7954
+INFO: [Common 17-1381] The checkpoint '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file translator_drc_routed.rpt -pb translator_drc_routed.pb -rpx translator_drc_routed.rpx
+Command: report_drc -file translator_drc_routed.rpt -pb translator_drc_routed.pb -rpx translator_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file translator_methodology_drc_routed.rpt -pb translator_methodology_drc_routed.pb -rpx translator_methodology_drc_routed.rpx
+Command: report_methodology -file translator_methodology_drc_routed.rpt -pb translator_methodology_drc_routed.pb -rpx translator_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_hls/translator/solution1/impl/verilog/project.runs/impl_1/translator_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file translator_power_routed.rpt -pb translator_power_summary_routed.pb -rpx translator_power_routed.rpx
+Command: report_power -file translator_power_routed.rpt -pb translator_power_summary_routed.pb -rpx translator_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+69 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file translator_route_status.rpt -pb translator_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file translator_timing_summary_routed.rpt -warn_on_violation  -rpx translator_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file translator_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file translator_clock_utilization_routed.rpt
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 11 13:14:01 2017...

@@ -1,20 +1,78 @@
 INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2017.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'alexandroni' on host 'Alexandroni' (Linux_x86_64 version 3.10.0-693.5.2.el7.x86_64) on Fri Dec 08 21:01:58 -02 2017
+INFO: [HLS 200-10] For user 'alexandroni' on host 'Alexandroni' (Linux_x86_64 version 3.10.0-693.5.2.el7.x86_64) on Wed Dec 13 19:57:49 -02 2017
 INFO: [HLS 200-10] On os "CentOS Linux release 7.4.1708 (Core) "
 INFO: [HLS 200-10] In directory '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test'
 INFO: [HLS 200-10] Opening project '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/contador'.
+INFO: [HLS 200-10] Adding design file 'counter.h' to the project
+INFO: [HLS 200-10] Adding design file 'counter.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'monitor.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'main.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'estimulos.h' to the project
+INFO: [HLS 200-10] Adding test bench file 'Makefile' to the project
 INFO: [HLS 200-10] Opening solution '/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/counter/vivado_hls/test/contador/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xc7a200tfbg676-2'
-INFO: [IMPL 213-8] Exporting RTL as an IP in IP-XACT.
-
-****** Vivado v2017.3 (64-bit)
-  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
-  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2017.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  8 21:02:16 2017...
+INFO: [HLS 200-10] Setting target device to 'xc7a35ticpg236-1l'
+INFO: [HLS 200-10] Analyzing design file 'counter.cpp' ... 
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:01:32 ; elapsed = 00:00:55 . Memory (MB): peak = 453.004 ; gain = 17.504 ; free physical = 864 ; free virtual = 11811
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:01:35 ; elapsed = 00:00:57 . Memory (MB): peak = 453.004 ; gain = 17.504 ; free physical = 861 ; free virtual = 11812
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:36 ; elapsed = 00:00:58 . Memory (MB): peak = 453.297 ; gain = 17.797 ; free physical = 850 ; free virtual = 11806
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:01:36 ; elapsed = 00:00:59 . Memory (MB): peak = 453.297 ; gain = 17.797 ; free physical = 846 ; free virtual = 11802
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:37 ; elapsed = 00:00:59 . Memory (MB): peak = 581.000 ; gain = 145.500 ; free physical = 821 ; free virtual = 11780
+WARNING: [XFORM 203-561] 'Loop-1' (counter.cpp:21:6) in function 'simple_counter::counting' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:01:37 ; elapsed = 00:01:00 . Memory (MB): peak = 581.000 ; gain = 145.500 ; free physical = 819 ; free virtual = 11776
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [SCA 200-201] Elaborating SystemC module 'simple_counter'.
+INFO: [SCA 200-201] Performing SystemC synthesis linting.
+INFO: [SCA 200-201] Analyzing ports and processes.
+INFO: [SCA 200-201] Found the clock port of process 'simple_counter::counting': 'clk'.
+INFO: [SCA 200-201] Found the reset port of process 'simple_counter::counting': 'reset'.
+INFO: [HLS 200-10] Synthesizing SystemC module [ simple_counter ]
+INFO: [HLS 200-10] Found SystemC process: 'simple_counter_counting' 
+INFO: [HLS 200-10] Synthesizing 'simple_counter_counting' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'simple_counter_counting' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 60.08 seconds; current allocated memory: 84.739 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 84.874 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'simple_counter_counting' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'simple_counter_counting'.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 85.025 MB.
+INFO: [HLS 200-10] Synthesizing 'simple_counter' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'simple_counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 85.521 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 85.592 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'simple_counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'simple_counter/start' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'simple_counter/clk' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'simple_counter/reset' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'simple_counter/count_out' to 'ap_vld'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'simple_counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.03 seconds; current allocated memory: 85.668 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:38 ; elapsed = 00:01:01 . Memory (MB): peak = 581.000 ; gain = 145.500 ; free physical = 821 ; free virtual = 11771
+INFO: [SYSC 207-301] Generating SystemC RTL for simple_counter.
+INFO: [VHDL 208-304] Generating VHDL RTL for simple_counter.
+INFO: [VLOG 209-307] Generating Verilog RTL for simple_counter.
+INFO: [HLS 200-112] Total elapsed time: 60.78 seconds; peak allocated memory: 85.668 MB.

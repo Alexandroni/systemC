@@ -1,0 +1,8 @@
+translator.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/translator.v,
+translator_mul_mudEe.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/translator_mul_mudEe.v,
+translator_transform.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/translator_transform.v,
+translator_transleOg.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/translator_transleOg.v,
+translator_urem_1bkb.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/translator_urem_1bkb.v,
+translator_urem_7cud.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/translator_urem_7cud.v,
+translator_0.v,verilog,xil_defaultlib,../../../../translator.srcs/sources_1/ip/translator_0/sim/translator_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

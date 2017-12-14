@@ -1,0 +1,15 @@
+0.6
+2017.3
+Oct  4 2017
+20:01:51
+/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator.v,1513005335,verilog,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_mul_mudEe.v,,translator,,,,,,,,
+,,,,,,,,,,,,,,
+,,,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_transform.v,,translator_mul_mudEe;translator_mul_mudEe_DSP48_0,,,,,,,,
+/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_transform.v,1512955740,verilog,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_transleOg.v,,translator_transform,,,,,,,,
+,,,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_urem_1bkb.v,,translator_transleOg;translator_transleOg_ram,,,,,,,,
+,,,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.ip_user_files/ipstatic/hdl/verilog/translator_urem_7cud.v,,translator_urem_1bkb;translator_urem_1bkb_div;translator_urem_1bkb_div_u,,,,,,,,
+,,,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sources_1/ip/translator_0/sim/translator_0.v,,translator_urem_7cud;translator_urem_7cud_div;translator_urem_7cud_div_u,,,,,,,,
+/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.sim/sim_1/behav/xsim/glbl.v,1507081072,verilog,,,,glbl,,,,,,,,
+/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sim_1/new/tb_translator.v,1512957731,verilog,,,,tb_translator,,,,,,,,
+/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sources_1/ip/translator_0/sim/translator_0.v,1512955740,verilog,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sources_1/new/top_translate.v,,translator_0,,,,,,,,
+/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sources_1/new/top_translate.v,1512956478,verilog,,/home/alexandroni/Dropbox/TCC-JOAO-PEDRO/Vivado/final/examples/display/translator/vivado_design/translator/translator.srcs/sim_1/new/tb_translator.v,,top_translate,,,,,,,,

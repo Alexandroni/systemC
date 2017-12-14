@@ -29269,13 +29269,13 @@ struct simple_counter : ::sc_core::sc_module {
 void simple_counter::counting(){
 
  aux = 0;
- count_out.write(aux);
+ count_out = aux;
  wait();
 
  while(true){
   if(start.read()){
    aux = aux + 1;
-   count_out.write(aux);
+   count_out = aux;
   }
   wait();
  }

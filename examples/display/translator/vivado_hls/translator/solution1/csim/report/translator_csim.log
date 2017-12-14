@@ -1,0 +1,31 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../translator.cpp in debug mode
+   Generating csim.exe
+
+             SystemC 2.3.0-ASI --- May 15 2013 06:30:00
+        Copyright (c) 1996-2012 by all Contributors,
+        ALL RIGHTS RESERVED
+
+
+Warning: (W506) illegal characters:  Clock substituted by _Clock
+In file: ../../../../src/sysc/kernel/sc_object.cpp:264
+Construindo Monitor
+     Tempo    number    toDisp      Disp
+       0 s         0         0         0
+      1 ns      1023         6         7
+     11 ns      1023        18        11
+     21 ns      1023         1        13
+     31 ns      1023        79        14
+     41 ns       985        36         7
+     51 ns       985         0        11
+     61 ns       985         4        13
+     71 ns       985         1        14
+     81 ns        24        76         7
+     91 ns        24        18        11
+    101 ns        24         1        13
+    111 ns        24         1        14
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

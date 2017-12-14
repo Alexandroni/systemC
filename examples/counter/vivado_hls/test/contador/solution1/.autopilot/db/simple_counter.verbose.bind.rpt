@@ -3,13 +3,13 @@
 ================================================================
 == Vivado HLS Report for 'simple_counter'
 ================================================================
-* Date:           Fri Dec  8 21:01:50 2017
+* Date:           Wed Dec 13 19:58:50 2017
 
 * Version:        2017.3 (Build 2018833 on Wed Oct 04 20:30:40 MDT 2017)
 * Project:        contador
 * Solution:       solution1
 * Product family: artix7
-* Target device:  xc7a200tfbg676-2
+* Target device:  xc7a35ticpg236-1l
 
 
 ================================================================
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|      3.10|        1.25|
+    |ap_clk  |  10.00|      3.79|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -100,8 +100,8 @@ ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPort
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "ret void" [./counter.h:28]
 ST_1 : Operation 19 [2/2] (0.00ns)   --->   "call void @"simple_counter::counting"(i1* %start, i1* %clk, i1* %reset, i10* %count_out, i10* %simple_counter_aux_V)" [./counter.h:25]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
- <State 2> : 1.75ns
-ST_2 : Operation 20 [1/2] (1.74ns)   --->   "call void @"simple_counter::counting"(i1* %start, i1* %clk, i1* %reset, i10* %count_out, i10* %simple_counter_aux_V)" [./counter.h:25]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ <State 2> : 2.12ns
+ST_2 : Operation 20 [1/2] (2.12ns)   --->   "call void @"simple_counter::counting"(i1* %start, i1* %clk, i1* %reset, i10* %count_out, i10* %simple_counter_aux_V)" [./counter.h:25]   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "unreachable"
 
 
@@ -437,9 +437,9 @@ StgValue_21       (unreachable    ) [ 000]
 |----------|-----------------------------------|---------|---------|---------|
 | Operation|          Functional Unit          |  Delay  |    FF   |   LUT   |
 |----------|-----------------------------------|---------|---------|---------|
-|   call   | grp_simple_counter_counting_fu_48 |   2.7   |    10   |    35   |
+|   call   | grp_simple_counter_counting_fu_48 |  3.328  |    10   |    35   |
 |----------|-----------------------------------|---------|---------|---------|
-|   Total  |                                   |   2.7   |    10   |    35   |
+|   Total  |                                   |  3.328  |    10   |    35   |
 |----------|-----------------------------------|---------|---------|---------|
 
 Memories:
@@ -461,10 +461,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    2   |   10   |   35   |
+|  Function |    3   |   10   |   35   |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |
 |  Register |    -   |    -   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    2   |   10   |   35   |
+|   Total   |    3   |   10   |   35   |
 +-----------+--------+--------+--------+

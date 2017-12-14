@@ -81,7 +81,7 @@ _ZN14simple_counter8countingEv:         # @_ZN14simple_counter8countingEv
 	movq	%rsp, %rbp
 .Ltmp17:
 	.cfi_def_cfa_register %rbp
-	subq	$48, %rsp
+	subq	$64, %rsp
 	movl	$0, %esi
 	movq	%rdi, -8(%rbp)
 	movq	-8(%rbp), %rdi
@@ -96,9 +96,10 @@ _ZN14simple_counter8countingEv:         # @_ZN14simple_counter8countingEv
 	addq	$840, %rcx              # imm = 0x348
 	movq	%rcx, %rsi
 	movq	%rax, -24(%rbp)         # 8-byte Spill
-	callq	_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_
-	movq	-16(%rbp), %rax         # 8-byte Reload
-	movq	%rax, %rdi
+	callq	_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_
+	movq	-16(%rbp), %rcx         # 8-byte Reload
+	movq	%rcx, %rdi
+	movq	%rax, -32(%rbp)         # 8-byte Spill
 	callq	_ZN7sc_core9sc_module4waitEv
 .LBB3_1:                                # =>This Inner Loop Header: Depth=1
 	movq	-16(%rbp), %rax         # 8-byte Reload
@@ -114,10 +115,10 @@ _ZN14simple_counter8countingEv:         # @_ZN14simple_counter8countingEv
 	movq	-16(%rbp), %rcx         # 8-byte Reload
 	addq	$840, %rcx              # imm = 0x348
 	movq	%rcx, %rdi
-	movq	%rax, -32(%rbp)         # 8-byte Spill
+	movq	%rax, -40(%rbp)         # 8-byte Spill
 	callq	_ZNK5sc_dt12sc_uint_basecvyEv
 	addq	$1, %rax
-	movq	-32(%rbp), %rdi         # 8-byte Reload
+	movq	-40(%rbp), %rdi         # 8-byte Reload
 	movq	%rax, %rsi
 	callq	_ZN5sc_dt7sc_uintILi10EEaSEy
 	movq	-16(%rbp), %rcx         # 8-byte Reload
@@ -125,8 +126,9 @@ _ZN14simple_counter8countingEv:         # @_ZN14simple_counter8countingEv
 	movq	-16(%rbp), %rsi         # 8-byte Reload
 	addq	$840, %rsi              # imm = 0x348
 	movq	%rcx, %rdi
-	movq	%rax, -40(%rbp)         # 8-byte Spill
-	callq	_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_
+	movq	%rax, -48(%rbp)         # 8-byte Spill
+	callq	_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_
+	movq	%rax, -56(%rbp)         # 8-byte Spill
 .LBB3_3:                                #   in Loop: Header=BB3_1 Depth=1
 	movq	-16(%rbp), %rax         # 8-byte Reload
 	movq	%rax, %rdi
@@ -170,11 +172,11 @@ _ZN5sc_dt7sc_uintILi10EEaSEi:           # @_ZN5sc_dt7sc_uintILi10EEaSEi
 	.size	_ZN5sc_dt7sc_uintILi10EEaSEi, .Ltmp24-_ZN5sc_dt7sc_uintILi10EEaSEi
 	.cfi_endproc
 
-	.section	.text._ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_,"axG",@progbits,_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_,comdat
-	.weak	_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_
+	.section	.text._ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_,"axG",@progbits,_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_,comdat
+	.weak	_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_
 	.align	16, 0x90
-	.type	_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_,@function
-_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_: # @_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_
+	.type	_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_,@function
+_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_: # @_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_
 	.cfi_startproc
 # BB#0:
 	pushq	%rbp
@@ -190,21 +192,23 @@ _ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_: # @_ZN7sc_core8sc_ino
 	movq	%rsi, -16(%rbp)
 	movq	-8(%rbp), %rsi
 	movq	%rsi, %rdi
+	movq	%rsi, -24(%rbp)         # 8-byte Spill
 	callq	_ZN7sc_core9sc_port_bINS_18sc_signal_inout_ifIN5sc_dt7sc_uintILi10EEEEEEptEv
 	movq	%rax, %rsi
 	addq	$8, %rsi
 	movq	8(%rax), %rax
 	movq	32(%rax), %rax
 	movq	-16(%rbp), %rdi
-	movq	%rdi, -24(%rbp)         # 8-byte Spill
+	movq	%rdi, -32(%rbp)         # 8-byte Spill
 	movq	%rsi, %rdi
-	movq	-24(%rbp), %rsi         # 8-byte Reload
+	movq	-32(%rbp), %rsi         # 8-byte Reload
 	callq	*%rax
+	movq	-24(%rbp), %rax         # 8-byte Reload
 	addq	$32, %rsp
 	popq	%rbp
 	ret
 .Ltmp30:
-	.size	_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_, .Ltmp30-_ZN7sc_core8sc_inoutIN5sc_dt7sc_uintILi10EEEE5writeERKS3_
+	.size	_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_, .Ltmp30-_ZN7sc_core6sc_outIN5sc_dt7sc_uintILi10EEEEaSERKS3_
 	.cfi_endproc
 
 	.section	.text._ZN7sc_core9sc_module4waitEv,"axG",@progbits,_ZN7sc_core9sc_module4waitEv,comdat

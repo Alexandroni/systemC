@@ -12,10 +12,10 @@ add_files -tb main.cpp
 add_files -tb estimulos.h
 add_files -tb Makefile
 open_solution "solution1"
-set_part {xc7a200tfbg676-2} -tool vivado
+set_part {xc7a35ticpg236-1l}
 create_clock -period 10 -name default
 #source "./contador/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -tool modelsim
 export_design -rtl verilog -format ip_catalog

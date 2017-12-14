@@ -32372,7 +32372,7 @@ _ssdm_op_SpecExt("member_name", "aux", &aux);;
 # 16 "counter.cpp"
 aux = 0;
 # 17 "counter.cpp"
-count_out.write(aux); _ssdm_op_SpecStateEnd(_ssdm_reset_v); _ssdm_RegionEnd("__ssdm_reset__");
+count_out = aux; _ssdm_op_SpecStateEnd(_ssdm_reset_v); _ssdm_RegionEnd("__ssdm_reset__");
 # 18 "counter.cpp"
 wait();
     while (true)
@@ -32380,7 +32380,7 @@ wait();
 {
   if(start.read()){
    aux = aux + 1;
-   count_out.write(aux);
+   count_out = aux;
   }
   wait();
  }; }
